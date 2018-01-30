@@ -47,7 +47,7 @@ Regions with multiple Availability Zones:
   - Beijing (2)
   - Ningxia (2)
 
-## Edge Locations
+### Edge Locations
 
 A AWS Edge Locations are locations around the world meant for caching content, enhancing the user experience, reducing latency. Edge locations are specifically used by AWS Cloudfront and AWS CDN. Every Region is has its own set Availability Zone's and Edge Locations.
 
