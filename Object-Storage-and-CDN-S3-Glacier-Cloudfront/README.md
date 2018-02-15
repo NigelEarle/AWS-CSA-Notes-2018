@@ -90,4 +90,16 @@ Exam Tip
     Cannot install apps, db or os
     Success uploads will generate HTTP 200 status code
     Read S3 FAQ before taking the exam. it comes up a lot
+    
+    Encryption
+      Client side encryption
+      Server side encryption
+        encryption with amazon s3 managed keys (SSE-S3)
+        encryption with KMS (SSE-KMS)
+        encryption with Customer Provided Keys (SSE-C)
+    
+    Control access to buckets using either a bucket ACL orusing Bucket Policies
+
+    BY DEFAULT BUCKETS ARE PRIVATE AND ALL OBJECTS STORED INSIDE THEM ARE PRIVATE
+
 
