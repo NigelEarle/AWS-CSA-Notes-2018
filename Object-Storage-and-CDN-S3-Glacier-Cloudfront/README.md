@@ -1,6 +1,4 @@
-# S3
-
-## HEAVY EXAM TOPIC
+# S3 - HEAVY EXAM TOPIC
 
 S3 is a safe place to store your static files being one the oldest services of AWS. It is an object based storage where your data is spread across multiple devices.
 
@@ -13,7 +11,7 @@ Example S3 URL:
 
 **_https://s3-eu-west-1.amazonaws.com/[bucket-name]_**
 
-## DATA CONSISTENCY
+## Data Consistency
 
 S3 maintains **_Read After Write_** consistency for PUTS of new objects. Meaning, as soon a new object is uploaded or written, it is available to read/view.
 
