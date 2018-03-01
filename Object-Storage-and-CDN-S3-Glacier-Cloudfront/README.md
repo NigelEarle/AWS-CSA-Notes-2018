@@ -1,33 +1,33 @@
 # S3
 
-HEAVY EXAM TOPIC
+## HEAVY EXAM TOPIC
 
-S3 is a safe place to store your files
-Object based storage
-Data is spread across multiple devices
+S3 is a safe place to store your static files being one the oldest services of AWS. It is an object based storage where your data is spread across multiple devices.
 
-S3 allows you to upload files
-Files can be from 0 bytes to 5TB
-Unlimited storage
-Buckets are folders
-S3 is a universal namespace. Names must be unique globally
-creates dns address - ex. https://s3-eu-west-1.amazonaws.com/[bucket-name]
-if upload is successful - will receive a 200 http response
+S3 allows you to upload, where files can be from 0 bytes to 5TB. If an upload is successful, you will recieve an HTTP status code of `200`.
+It is capable of unlimited storage. All files are stored into 'Buckets' which is basically an S3 term for folders.
 
-DATA CONSISTENCY
-    read after write consistency for PUTS of new objects
-    eventual consistency for overwrite PUTS and DELETES can take some time to propagate
-        takes time to propagate because. not immediate
-    Updates are atomic - updates could be new or old data.
-    
-S3 Object - Key Value store
-    key - name of object
-    value - data made up of sequence of bytes
-    version id - versioning
-    metadata - data about data ur storing
-    subresource
-        access control lists
-        torrent
+S3 uses a universal namespace meaning all names must be **_globally_** unique.
+
+Example S3 URL:
+
+**_https://s3-eu-west-1.amazonaws.com/[bucket-name]_**
+
+## DATA CONSISTENCY
+
+S3 maintains **_Read After Write_** consistency for PUTS of new objects. Meaning, as soon a new object is uploaded or written, it is available to read/view.
+
+When performing overwrite PUTS and DELETES, these updated and/or deleted objects can take time to propagate because, also known as **_Eventual Consistency_**. These type of updates are known as **_Atomic_** - fetching these resources could be old or new.
+
+## S3 Object - Key, Value Store
+
+- Key -> Name of object to be stored
+- Value -> Data being stored - made up of a sequence of bytes
+- Version ID -> Version signifier
+- Metadata -> Data about the data you are storing - date stored, size, 
+- Subresource
+    - Access Control Lists
+    - Torrents
 
 Built for 99.99% availability for the S3 platform
 Amazon guarantee 99.9% availability - always available
