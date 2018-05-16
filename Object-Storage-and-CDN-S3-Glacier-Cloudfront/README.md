@@ -9,7 +9,7 @@ S3 uses a universal namespace meaning all names must be **_globally_** unique.
 
 Example S3 URL:
 
-**_https://s3-eu-west-1.amazonaws.com/[bucket-name]_**
+**`https://s3-eu-west-1.amazonaws.com/[bucket-name]`**
 
 ## Data Consistency
 
