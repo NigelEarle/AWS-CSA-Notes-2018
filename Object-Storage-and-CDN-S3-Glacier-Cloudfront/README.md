@@ -27,26 +27,35 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
     - Access Control Lists
     - Torrents
 
-Built for 99.99% availability for the S3 platform
-Amazon guarantee 99.9% availability - always available
-Amazon guarantees 99.99999999999% (11 9’s) durability for S3 info
-Tiered storage
-Lifecycle management
-Versioning
-Encryption
-Secure data using access control lists bucket policies
+## S3 Basics 
 
-Storage Tiers 
-    S3 - Normal S3, 99.99% availability, 99.(11 9’s ) durability, stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilities concurrently.
+- Built for 99.99% availability for the S3 platform
+- Amazon guarantee 99.9% availability - always available
+- Amazon guarantees 99.99999999999% (11 9’s) durability for S3 info
+- Tiered storage
+- Lifecycle management
+- Versioning
+- Encryption
+- Secure data using access control lists bucket policies
 
-    S3 IA (infrequent access) - for data that is accessed less frequently but requires rapid access when needed. lower fee than s3 but you are charged a retrieval fee.
+### Storage Tiers 
 
-    Reduces Redundancy Storage (RRS) - Designed to provide 99.99% durability and 99.99% availability of objects over a given year.
+- **S3 (Normal)**
+	- 99.99% availability, 99.(11 9’s )
+	- durable, reliable - stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilities concurrently
 
-    Glacier - Very cheap but used for data archival only. Takes 3 - 5 hours to restore from glacier
-        It’s own separate product from S3. Extremely low cost storage service for data archival. Stores
-        data for as low as .01G a month and is optimized for data that is infrequently accessed and for
-        which retrieval times of 3 to 5 hours are suitable.
+- **S3 IA (infrequent access)**
+	- Used for data that is accessed less frequently but requires rapid access when needed
+	- Lower fee than S3 but, are charged a retrieval fee
+
+- **Reduces Redundancy Storage (RRS)** 
+	- Designed to provide 99.99% durability and 99.99% availability of objects over a given year.
+
+- **Glacier (Separate product from S3)**
+	- Very cost effective but used for data archival only
+	- Generally takes 3 - 5 hours to restore from glacier
+    - Stores data for as low as .01G a month
+    - Optimized for data that is infrequently accessed and for which retrieval times of 3 to 5 hours are suitable (slow retrieval).
 
 S3 Charges
     Storage
@@ -99,5 +108,3 @@ Exam Tip
     Control access to buckets using either a bucket ACL orusing Bucket Policies
 
     BY DEFAULT BUCKETS ARE PRIVATE AND ALL OBJECTS STORED INSIDE THEM ARE PRIVATE
-
-
