@@ -72,7 +72,7 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 
 # Exam Tips!!
 
-**General**
+### General
 - S3 is object based, allows you to upload files
 - Files can be 0B up to 5TB
 - Unlimited storage
@@ -81,17 +81,17 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Control access to buckets using either a bucket ACL routing Bucket Policies
 - By default, **BUCKETS ARE PRIVATE AND ALL OBJECTS STORED INSIDE THEM ARE PRIVATE**
 
-**Reads and Writes**
+### Reads and Writes
 - Read after Write consistency for PUTS of new objects
 - Eventual consistency of overwrite PUTS and DELETES (can take time to propagate)
 
-**Storage Class Tiers**
+### Storage Class Tiers
 - S3 (normal) - durable, immediately available, frequently used
 - S3  IA (infrequent access) - like normal S3 tier but infrequently accessed
 - S3 Reduced Redundancy Storage (RRS) - data storage that is easily reproducible, such as thumb nails etc
 - Glacier (separate product from S3) - Used to archive data. Low and slow retrieval 
 
-**Core fundamentals of S3 Object**
+### Core fundamentals of S3 Object
 - key (name)
 - value (data)
 - version id
@@ -104,16 +104,26 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Success uploads will generate HTTP 200 status code
 - Read S3 FAQ before taking the exam. it comes up a lot
 
-**Encryption**
+### Encryption
 - Client side encryption
 - Server side encryption
 	- encryption with amazon s3 managed keys (SSE-S3)
 	- encryption with KMS (SSE-KMS)
 	- encryption with Customer Provided Keys (SSE-C)
 
-**Versioning**
+### Versioning
 - Stores all version of an object (all writes/udpates and even if you delete the object). Must manually delete object if you wish to delete a version
 - Great back up tool
 - Once enabled, cannot be disabled, only suspended
 - Integrates with Lifecycle rules
 - Versioning MFA Delete capability, uses mulit-factor authentication, can be used to provide an additional layer of security
+
+
+### Cross Region Replication
+- Versioning must be enabled on source and destination buckets
+- Regions must be unique, Cannot cross region to same region
+- Files are not replicated automatically. All subsequent updated files will be replicated automatically.
+- You cannot replicate to multiple buckets - daisy chaining (currently).
+- Delete markers are replicated
+- Deleting individual versions or delete markers will not be replicated
+- Understand what CRR at high level
