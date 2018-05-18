@@ -110,3 +110,10 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 	- encryption with amazon s3 managed keys (SSE-S3)
 	- encryption with KMS (SSE-KMS)
 	- encryption with Customer Provided Keys (SSE-C)
+
+**Versioning**
+- Stores all version of an object (all writes/udpates and even if you delete the object). Must manually delete object if you wish to delete a version
+- Great back up tool
+- Once enabled, cannot be disabled, only suspended
+- Integrates with Lifecycle rules
+- Versioning MFA Delete capability, uses mulit-factor authentication, can be used to provide an additional layer of security
