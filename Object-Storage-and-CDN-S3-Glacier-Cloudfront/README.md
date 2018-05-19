@@ -127,3 +127,13 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Delete markers are replicated
 - Deleting individual versions or delete markers will not be replicated
 - Understand what CRR at high level
+
+
+### Lifecycle management
+- Can be used with or without versioning
+- Can be applied to current version as well as previous versions
+- Acceptable actions
+	- Transition to Standard - IA Storage Class (128kb and 30 days after creation date)
+	- Archive to Glacier - 30 days after IA Storage if relevant
+	- Permanently delete
+- Understand at high level
