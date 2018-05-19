@@ -1,7 +1,5 @@
 # S3 - HEAVY EXAM TOPIC
 
----
-
 S3 is a safe place to store your static files being one the oldest services of AWS. It is an object based storage where your data is spread across multiple devices.
 
 S3 allows you to upload, where files can be from 0 bytes to 5TB. If an upload is successful, you will recieve an HTTP status code of `200`.

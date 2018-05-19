@@ -1,7 +1,5 @@
 # Exam Tips!!
 
----
-
 ## S3, Glacier
 
 ### General
