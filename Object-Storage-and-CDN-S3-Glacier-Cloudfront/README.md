@@ -1,5 +1,7 @@
 # S3 - HEAVY EXAM TOPIC
 
+---
+
 S3 is a safe place to store your static files being one the oldest services of AWS. It is an object based storage where your data is spread across multiple devices.
 
 S3 allows you to upload, where files can be from 0 bytes to 5TB. If an upload is successful, you will recieve an HTTP status code of `200`.
@@ -70,7 +72,29 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Takes advantage of AWS Cloudfront global, distributed edge locations.
 - When data arrives at an edge location, it is then routed to Amazon S3 over an optimized network path.
 
+--- 
+
+# CDN (Content Delivery Network)
+
+A system of distributed servers that deliver webpages and other content to a user based on the geographic locations of that user, the origin of the webpage and a content delivery server
+
+## Cloudfront
+
+Cloudfront can be used to deliver your entire website, including dynamic content, static, streaming and interactive content using a global network of edge locations. Requests for your content are automically routed to the nearest edge location, so content is delivered with the best possible performance.
+
+Cloudfront is optimized to work with other Amazon Web Services like S3, EC2, Elastic Load Balancing and Route 53. Cloudfront also works seamlessly with any non-AWS origin server which stores the original,definitive versions of your files.
+
+### Key terminology
+
+- **Edge Location** - Location where content will be cached. Separate to and AWS region (See [1000-ft-overview/Edge-locations](https://github.com/NigelEarle/AWS-CSA-Notes-2018/tree/master/1000-ft-overview#edge-locations))
+- **Origin** - This is the origin of all the files that the CDN will distribute. Can be S3 bucket, EC2 instance, Elastic Load Balancer or Route 53.
+- **Distribution** - Given name of CDN which consists of a collection of Edge Locations
+- **Web Distribution** - Typically used for websites
+- **RTMP (Real Time Message Protocol)** - Used for media streaming
+
 # Exam Tips!!
+
+---
 
 ### General
 - S3 is object based, allows you to upload files
@@ -137,3 +161,16 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 	- Archive to Glacier - 30 days after IA Storage if relevant
 	- Permanently delete
 - Understand at high level
+
+---
+
+## CDN Cloudfront
+
+- Edge Location - Location where content will be cached - separate from AWS Region
+- Origin - Origin of all files the the CDN will distribute. Can be S3, EC2, Elastic Load Balancer, Route 53 or your own custom server.
+- Distribution - Name given to the CDN which consistsof a collection of Edge Locations
+	- Web Distribution - Typically used for websites
+	- RTMP - Used for media streaming
+- Edge Locations are not just for READ only, you can write (PUT) too!
+- Object are cached for life of TTL (Time To Live)
+- Can clear cached objects, but you will be charged
