@@ -1,4 +1,4 @@
-# Exam Tips!!
+# Exam Tips
 
 ## S3, Glacier
 
