@@ -69,3 +69,27 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Enables fast, easy and secure transfers of files over long distances between you and your end users and an S3 bucket.
 - Takes advantage of AWS Cloudfront global, distributed edge locations.
 - When data arrives at an edge location, it is then routed to Amazon S3 over an optimized network path.
+
+## S3 Encrytion and Security
+
+By default all newly created buckets are PRIVATE. You need to manually change permissions to access resources. You can set policies and permissions using either Access Control Lists or Bucket Policies. You have the ability to make a bucket private but all certian objects in that bucket to be public.
+
+### Logging
+
+S3 buckets can be configured to create access logs which log all requests made to that bucket. This can be done to another bucket through cross account access.
+
+### Encryption
+
+**4** different methods and **2** types of encryption for S3 buckets.
+
+- In transit - from client uploading to S3 bucket.
+	- Using SSL/TLS encryption. HTTPS
+
+- At Rest
+	- Server Side Encryption
+		- **SSE-S3** - S3 Managed key. Each object is encrypted with a unique key employing strong multi-factor encryption with rotating master key (AES-256 encryption).
+		- **SSE KMS** - AWS Key Management Service, Managed Keys. Similar to SSE-S3. Separate permissions for envelope key - key that protects data encryption key. Audit trail - when keys were used and who were using.
+		- **SSE-C** - Server Side Encryption with Customer Provided Keys. You manage encryption key.
+	- Client Side Encryption
+		- Encrypt data on client side and upload to S3
+
