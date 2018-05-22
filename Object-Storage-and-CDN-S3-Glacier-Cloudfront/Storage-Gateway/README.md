@@ -9,10 +9,9 @@ Downloaded as virtual machine (VM) that you install on a host in your datacenter
 ### Four Types of Gateway Storage
 
 1. File Gateway (NFS)
-  - Store flate files in S3 through a Network File System (NFS) mount point. Ownershi, permissions, and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management, and cross-region replication apply directly to objects stored in your bucket.
+	- Store flate files in S3 through a Network File System (NFS) mount point. Ownershi, permissions, and timestamps are durably stored in S3 in the user-metadata of the object associated with the file. Once objects are transferred to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management, and cross-region replication apply directly to objects stored in your bucket.
 2. Volume Gateway (iSCSI)
-  - Block based storage, storage you would run OS, DB's on. Not stored in S3.
-  - Stored Volumes - Store entire copy of dataset on site.
-  - Cached Volumes - Store most recent accessed data.
+	- Block based storage, storage you would run OS, DB's on. Not stored in S3.
+	- Stored Volumes - Store entire copy of dataset on site.
+	- Cached Volumes - Store most recent accessed data.
 3. Tape Gateway (VTL)
-
