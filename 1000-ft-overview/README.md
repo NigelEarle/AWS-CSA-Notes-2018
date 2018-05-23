@@ -4,9 +4,9 @@
 
 ### Regions
 
-An AWS Region is a physical, geographical area or location, consisting of 2 or more Availability Zones.
+**AWS Region** is a physical, geographical area or location, consisting of 2 or more Availability Zones.
 
-Current regions across the world:
+**_Current regions across the world:_**
 
 - US East
 - US West
@@ -19,9 +19,9 @@ Current regions across the world:
 
 ### Availability Zones (AZ)
 
-An AWS Availability Zone is one or more discrete data centers, each with redundant power, networking and connectivity housed in separate facilities. Deploying your application across multiple Availability Zones is useful for redundancy, low latency and fault tolerance.
+**AWS Availability Zones** are one or more discrete data centers, each with redundant power, networking and connectivity housed in separate facilities. Deploying your application across multiple Availability Zones is useful for redundancy, low latency and fault tolerance.
 
-Regions with multiple Availability Zones:
+**_Regions with multiple Availability Zones:_**
 
 - US East
   - Ohio (3)
@@ -49,5 +49,5 @@ Regions with multiple Availability Zones:
 
 ### Edge Locations
 
-A AWS Edge Locations are locations around the world meant for caching content, enhancing the user experience, reducing latency. Edge locations are specifically used by AWS Cloudfront and AWS CDN. Every Region is has its own set Availability Zone's and Edge Locations.
+**AWS Edge Locations** are locations around the world meant for caching content, enhancing the user experience, reducing latency. Edge locations are specifically used by AWS Cloudfront and AWS CDN. Every Region is has its own set Availability Zone's and Edge Locations.
 

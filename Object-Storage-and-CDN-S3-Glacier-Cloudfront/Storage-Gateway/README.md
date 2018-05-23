@@ -14,9 +14,6 @@ Store flate files in S3 through a Network File System (NFS) mount point. Ownersh
 
 ### Volume Gateway (iSCSI)
 
-	- Stored Volumes - Store entire copy of dataset on site.
-	- Cached Volumes - Store most recent accessed data.
-
 The volume interface presents your applications with disk volumes using the iSCSI block protocol.
 
 _Note: iSCSI is block based storage. Store OS, DB's. Think of as virtual hard disk_
