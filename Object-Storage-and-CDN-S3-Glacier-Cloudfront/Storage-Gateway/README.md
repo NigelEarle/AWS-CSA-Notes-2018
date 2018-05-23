@@ -1,6 +1,6 @@
 # Storage Gateway
 
-**Understand at theoretical level**
+**_Understand at theoretical level_**
 
 Service that connects an on-premise software appliance with cloud based storage to provide seamless and secure integration between an organization's on-premise IT environment and AWS's storage infrastructure. The service enables you to securely store data to AWS cloud for scalable and cost-effective storage. Replicates your data to specifically S3 bucket.
 
@@ -15,3 +15,15 @@ Downloaded as virtual machine (VM) that you install on a host in your datacenter
 	- Stored Volumes - Store entire copy of dataset on site.
 	- Cached Volumes - Store most recent accessed data.
 3. Tape Gateway (VTL)
+
+#### Volume Gateway
+
+The volume interface presents your applications with disk volumes using the iSCSI block protocol.
+
+_Note: iSCSI is block based storage. Store OS, DB's. Think of as virtual hard disk_
+
+Data written to these volumes can be asynchronously backed up as point-in-time snapshots of your volumes, and stored in the cloud as AWS EBS (Elastic Block Store - VM) snapshots.
+
+Snapshots are incremental backups that capture only the changed blocks. All snapshot storage is also compressed to minimize your storage charges.
+
+**_TLDR;Volume Gateway takes virtual harddisks that are on premise and back them up to AWS_**
