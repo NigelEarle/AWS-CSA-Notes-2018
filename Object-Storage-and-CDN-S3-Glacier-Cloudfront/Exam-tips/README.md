@@ -87,3 +87,12 @@
   - Cached Volumes - Entire dataset is stored on S3 and the most frequent accessed data is cached on site.
 - Gateway Virtual Tape Library
   - Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam etc.
+
+
+## Snowballs
+
+- Understand what a Snowball is
+- Understand what Import Export is
+- Snowball can
+	- Import to S3
+	- Export from S3
