@@ -68,8 +68,6 @@
 	- Permanently delete
 - Understand at high level
 
----
-
 ## CDN Cloudfront
 
 - Edge Location - Location where content will be cached - separate from AWS Region
@@ -80,3 +78,12 @@
 - Edge Locations are not just for READ only, you can write (PUT) too!
 - Object are cached for life of TTL (Time To Live)
 - Can clear cached objects, but you will be charged
+
+## Storage Gateway
+
+- File Gateway - For flat files, stored directly on S3.
+- Volume Gateway:
+  - Stored Volumes - Entire dataset is stored on site and is asynchronously backedup to S3
+  - Cached Volumes - Entire dataset is stored on S3 and the most frequent accessed data is cached on site.
+- Gateway Virtual Tape Library
+  - Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam etc.
