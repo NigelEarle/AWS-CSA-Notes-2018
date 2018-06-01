@@ -53,6 +53,8 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 
 ## EC2 Instance Types
 
+**_No need to memorize for associate exams_**
+
 | Family | Specialty                     | Use Cases                       |
 | ------:|:-----------------------------:| :------------------------------:|
 | F1     | Field Programmable Gate Array | Genomics research, financial analytics, real-time video processing, big data etc|
@@ -66,3 +68,17 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 | C5      | Compute Optimized             | CPU Intensive Apps / DBs |
 | P3      | Graphics / General Purpose GPU | Machine Learning, Bit Coin Mining etc |
 | X1      | Memory Optimized               | SAP HANA / Apache Spark |
+
+
+How to remember EC2 instance types (after 2017 reinvent):
+  - **_F_** - FGPA
+  - **_I_** - IOPS
+  - **_G_** - Graphics
+  - **_H_** - High Disk Throughput
+  - **_T_** - Cheap General Purpose (think T2 Micro)
+  - **_D_** - Density
+  - **_R_** - Ram
+  - **_M_** - Main choice for general purpose applications
+  - **_C_** - Compute
+  - **_P_** - Grahics(Pics)
+  - **_X_** - Extreme Memory
