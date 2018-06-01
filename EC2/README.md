@@ -70,7 +70,7 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 | X1      | Memory Optimized               | SAP HANA / Apache Spark |
 
 
-How to remember EC2 instance types (after 2017 reinvent):
+**How to remember EC2 instance types F.I.G.H.T.D.R.M.C.P.X (after 2017 reinvent):**
   - **_F_** - FGPA
   - **_I_** - IOPS
   - **_G_** - Graphics
