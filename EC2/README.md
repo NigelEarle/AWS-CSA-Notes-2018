@@ -50,3 +50,19 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 - Great for licensing which does not support multi-tenancy or cloud deployments
 - Can be purchased On-Demand (hourly).
 - Can be purchased as a Reservation for up to 70% off the On-Demand price.
+
+## EC2 Instance Types
+
+| Family | Specialty                     | Use Cases                       |
+| ------:|:-----------------------------:| :------------------------------:|
+| F1     | Field Programmable Gate Array | Genomics research, financial analytics, real-time video processing, big data etc|
+| I3      | High Speed Storage            | NoSQL DBs, Datawarehousing |
+| G3      | Graphics Intensive            | Video Encoding / 3D Application Streaming|
+| H1      | High Disk Throughput          | MapReduce-based workloads, distributed file systems such as HDFS and MapR-FS |
+| T2      | Lowest Cost General Purpose   | Web Servers / Small DBs |
+| D2      | Dense Storage                 | Fileservers / Data Warehousing / Hadoop |
+| R4      | Memory Optimization           | Memory Intensive Apps/DBs |
+| M5      | General Purpose               | Application Servers |
+| C5      | Compute Optimized             | CPU Intensive Apps / DBs |
+| P3      | Graphics / General Purpose GPU | Machine Learning, Bit Coin Mining etc |
+| X1      | Memory Optimized               | SAP HANA / Apache Spark |
