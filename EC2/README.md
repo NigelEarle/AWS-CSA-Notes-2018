@@ -56,7 +56,7 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 **_No need to memorize for associate exams_**
 
 | Family | Specialty                     | Use Cases                       |
-| ------:|:-----------------------------:| :------------------------------:|
+| :------:|:-----------------------------:| :------------------------------:|
 | F1     | Field Programmable Gate Array | Genomics research, financial analytics, real-time video processing, big data etc|
 | I3      | High Speed Storage            | NoSQL DBs, Datawarehousing |
 | G3      | Graphics Intensive            | Video Encoding / 3D Application Streaming|
