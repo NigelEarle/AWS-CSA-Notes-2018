@@ -82,3 +82,32 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
   - **_C_** - Compute
   - **_P_** - Grahics(Pics)
   - **_X_** - Extreme Memory
+
+## EBS - Elastic Block Storage
+
+Amazon EBS allows you to create storage volumes and attch them Amazon EC2 instances. Once attached, you can create a file system on top of theses volumes, run a database, or use them in any other way you would use a block device. EBS volumes are placed in a specific Availibility Zone, where they are automatically replicated to protect you from the failure of a single component.
+
+_TLDR; A disk in the cloud that you attach to your EC2 instances_
+
+### EBS Volume Types
+
+- General Purpose SSD (GP2)
+  - General purpose, balances both price and performance.
+  - Ratio of 3 IOPS per GB with up to 10,000 IOPS and the ability to burst up to 3000 IOPS for extended periods of time for volumes at 3334 GB and above
+- Provisioned IOPS SSD (IO1)
+  - Designed for I/O intensive applications such as large relational or NoSQL databases.
+  - Use if you need more than 10,000 IOPS
+  - Provision up to 20,000 IOPS per volume
+  - Super high performant
+- Throughput Optimized HDD (ST1)
+  - Big Data
+  - Data warehouses
+  - Log processing
+  - Cannot be a boot volume
+- Cold HDD (SC1)
+  - Lowest cost storage for infrequently accessed workloads
+  - File server
+  - Cannot be a boot volume
+- Magnetic (Standard)
+  - Lowest cost per GB of all EBS volume types that is bootable. Magnetic volumes are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important
+  
