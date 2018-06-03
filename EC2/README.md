@@ -110,4 +110,12 @@ _TLDR; A disk in the cloud that you attach to your EC2 instances_
   - Cannot be a boot volume
 - Magnetic (Standard)
   - Lowest cost per GB of all EBS volume types that is bootable. Magnetic volumes are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important
-  
+
+## Let's get our hands dirty! Launch an EC2 instance lab!
+
+### Summary
+
+- Termination protection is turned off by default, you _MUST_ turn it on.
+- On an EBS-backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated
+- EBS Root Volume of you DEFAULT AMI's cannot be encrypted. You can also use a third party tool (such as bit locker) to encrypt the root volume, or this can be done when creating AMI's (future lab) in the AWS console or using the API.
+- Additional volumes can be encrypted.
