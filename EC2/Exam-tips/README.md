@@ -16,7 +16,17 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 
 ## Instance Types
 
-**F.I.G.H.TD.R.M.C.P.X.**
+**F.** - FGPA
+**I.** - IOPS
+**G.** - Graphics
+**H.** - High Disk Throughput
+**T.** - Cheap General Purpose (think T2 Micro)
+**D.** - Density
+**R.** - Ram
+**M.** - Main choice for general purpose applications
+**C.** - Compute
+**P.** - Grahics(Pics)
+**X.** - Extreme Memory
 
 ## Volume Types
 
@@ -54,7 +64,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - Volumes will **ALWAYS** be in the same availability zone as the EC2 instance.
 - To move and EC2 volume from one AZ/Region to another, take a snap or an image of it, then copy it to the new AZ/Region.
 
-#### Volumes vs Snapshots - Security
+### Volumes vs Snapshots - Security
 
 - Snapshots of encrypted volumes are encrypted automatically.
 - Volumes restored from encrypted snapshots are encrypted automatically.
