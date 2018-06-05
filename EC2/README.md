@@ -119,3 +119,9 @@ _TLDR; A disk in the cloud that you attach to your EC2 instances_
 - On an EBS-backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated
 - EBS Root Volume of you DEFAULT AMI's cannot be encrypted. You can also use a third party tool (such as bit locker) to encrypt the root volume, or this can be done when creating AMI's (future lab) in the AWS console or using the API.
 - Additional volumes can be encrypted.
+
+## Security Groups
+
+### What is a Security Group?
+
+A security group is a virtual firewall that's controlling traffic to your EC2 instance. When you first launch as EC2 instance you associate it to 1 or more instances. You have the ability to add rules to these security groups that allows traffic to or from these instances.
