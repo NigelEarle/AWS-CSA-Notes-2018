@@ -1,6 +1,6 @@
 # Exam Tips
 
-### EC2 Instance Run Down
+## EC2 Instance Run Down
 
 - **On Demand** - allows you to pay a fixed rate by the hour (or second) with not commitement
 
@@ -14,19 +14,19 @@
 
 If a Spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage. However, if you terminatethe instance yourself, you will be charged for the complete hour in which the instance ran.
 
-### Instance Types
+## Instance Types
 
 **F.I.G.H.TD.R.M.C.P.X.**
 
-### Volume Types
+## Volume Types
 
-#### SSD
+### SSD
 
 - **General Purpose (SSD)** - balances price and perf. for a wide variety of workloads
 
 - **Provisioned IOPS (SSD)** - Highest perf. SSD volume for mission-critical low-latency or high-throughput workloads
 
-#### Magnetic
+### Magnetic
 
 - **Throughput Optimized HDD** - Low cost HDD volume designed for frequently accessed, throughput-intensive workloads
 
@@ -34,9 +34,9 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 
 - **Magnetic** - Previous Generation. Can be a boot volume.
 
-### Upgrading EBS Volume Types - Lab
+## Upgrading EBS Volume Types - Lab
 
-#### Volumes & Snapshots
+### Volumes & Snapshots
 
 - Volumes exist on EBS
   - Virtual Hard Disk
@@ -45,7 +45,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - Snapshots are incremental - this means that only the blocks that have chnaged since your last snapshot are moved to S3. Only recording the changes
 - If it's 1st snapshot, takes time to create
 
-#### Snapshots of Root Device Volumes
+### Snapshots of Root Device Volumes
 
 - To create a snapshot of Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot, however you can take a snapshot while instance is running.
 - However you can take a snap while the instance is running.
