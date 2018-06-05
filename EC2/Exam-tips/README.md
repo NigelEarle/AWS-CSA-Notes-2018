@@ -33,3 +33,30 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - **Cold HDD** - Lowest cost HDD volume designed for less frequently accessed workloads
 
 - **Magnetic** - Previous Generation. Can be a boot volume.
+
+### Upgrading EBS Volume Types - Lab
+
+#### Volumes & Snapshots
+
+- Volumes exist on EBS
+  - Virtual Hard Disk
+- Snapshots exist on S3
+- Snapshots are a point in time copies of Volumes
+- Snapshots are incremental - this means that only the blocks that have chnaged since your last snapshot are moved to S3. Only recording the changes
+- If it's 1st snapshot, takes time to create
+
+#### Snapshots of Root Device Volumes
+
+- To create a snapshot of Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot, however you can take a snapshot while instance is running.
+- However you can take a snap while the instance is running.
+- You can create AMI's from EBS-backed Instances and Snapshots.
+- You can change EBS volume sizes on the fly, including changing the size and storage type.
+- Volumes will **ALWAYS** be in the same availability zone as the EC2 instance.
+- To move and EC2 volume from one AZ/Region to another, take a snap or an image of it, then copy it to the new AZ/Region.
+
+#### Volumes vs Snapshots - Security
+
+- Snapshots of encrypted volumes are encrypted automatically.
+- Volumes restored from encrypted snapshots are encrypted automatically.
+- You can share snapshots, but only if they are unencrypted.
+  - These snapshots can be shared with other AWS accounts or made public.
