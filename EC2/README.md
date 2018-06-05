@@ -125,3 +125,14 @@ _TLDR; A disk in the cloud that you attach to your EC2 instances_
 ### What is a Security Group?
 
 A security group is a virtual firewall that's controlling traffic to your EC2 instance. When you first launch as EC2 instance you associate it to 1 or more instances. You have the ability to add rules to these security groups that allows traffic to or from these instances.
+
+### Security Groups - General
+
+1. Any security group rules apply immediately
+2. Security groups are **_stateful_**. Inbound rules automatically add outbound rules
+3. All traffic is blocked by default and included through the rules. Whitelist
+4. All outbound traffic is allowed
+5. You can have multiple EC2 instances within a security group.
+6. You can have multiple security groups attached to EC2 instances.
+7. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
+8. You can specify allow rules, but not deny rules.
