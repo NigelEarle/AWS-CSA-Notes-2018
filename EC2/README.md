@@ -139,3 +139,9 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 
 ## RAID, Volumes & Snapshots
 
+### RAID - Redundant Array of Indenpendent Disks
+
+- RAID 0 - Striped, no redundancy, good performance. If one fails, you lose all
+- RAID 1 - Mirrored, redundant. If one fails, others available
+- RAID 5 - Good for reads, bad for writes, AWS does not recommend ever putting RAID 5's on EBS. Strongly discouraged.
+- RAID 10 - Striping & Mirrored, good redundancy, good performance.
