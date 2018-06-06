@@ -136,3 +136,6 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 6. You can have multiple security groups attached to EC2 instances.
 7. You cannot block specific IP addresses using Security Groups, use Network Access Control Lists.
 8. You can specify allow rules, but not deny rules.
+
+## RAID, Volumes & Snapshots
+
