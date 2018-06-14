@@ -145,3 +145,15 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 - RAID 1 - Mirrored, redundant. If one fails, others available
 - RAID 5 - Good for reads, bad for writes, AWS does not recommend ever putting RAID 5's on EBS. Strongly discouraged.
 - RAID 10 - Striping & Mirrored, good redundancy, good performance.
+
+#### How can I take a Snapshot of a RAID Array?
+
+- **Problem** - Taking a snapshot excludes the data held in cache by applications and the OS. This doesn't really matter on single volume, however when using multiple volumes in a RAID Array, this can be a problem due to interdependencies of the array.
+
+- **Solution** - Take an application specific snapshot.
+  - Stop application from writing to disk.
+  - Flush all caches to the disk.
+  - How can we do this?
+    - Freeze the file system
+    - Unmount the RAID Array
+    - Shutting down the associated EC2 instance.
