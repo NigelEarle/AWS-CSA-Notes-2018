@@ -170,3 +170,15 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 - Volumes restored from encrypted snapshots are encrypted automatically.
 - You can share snapshots, but only if they are unencrypted.
   - Said snapshots can be shared with other AWS accoutns of made public
+
+## AMI Types
+
+### What should you select your AMI based on?
+
+- Region
+- OS
+- Architecture
+- Launch Permissions
+- Storage for the Root Device (Root Device Volume)
+  - Instance Store (Ephemeral Store)
+  - EBS Backed Volumes
