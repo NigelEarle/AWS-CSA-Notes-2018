@@ -157,3 +157,16 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
     - Freeze the file system
     - Unmount the RAID Array
     - Shutting down the associated EC2 instance.
+
+## Create an AMI lab - Volumes vs. Snapshots
+
+### Snapshots of Root Device Volumes
+
+- To create a snapshot for Amazon EBS volumes that server as root devices, you should stop the instance before taking the snapshot.
+
+### Security
+
+- Snapshots of encrypted volumes are encrypted automatically
+- Volumes restored from encrypted snapshots are encrypted automatically.
+- You can share snapshots, but only if they are unencrypted.
+  - Said snapshots can be shared with other AWS accoutns of made public
