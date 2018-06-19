@@ -194,3 +194,40 @@ The root device for an instance launched from the AMI is an Amazon EBS volume cr
 **_For Instance Store Volumes:_**
 
 The root device for an instance launched from the AMI is an instance store volume created from a template stored in Amazon S3.
+
+## Elastic Load Balancers
+
+### What is a load balancer?
+
+A virtual appliance that balances the load of HTTP traffic etc. of your web application/web servers.
+
+### Types of Load Balancers
+
+- Application Load Balancers
+- Network Load Balancers
+- Classic Load Balancers
+
+### Application Load Balancer _(Intelligent)_
+
+Best suited for load balancing of HTTP(S) traffic. They operate at Layer 7 (OSI) and are application aware. The are intelligent, and you can create advanced request routing, sending specified requests to specific web servers.
+
+### Network Load Balancer _(Performance)_
+
+Best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4), Network Load Balancers are capable of handling millions of requests per second, while maintaining ultra-low latencies.
+
+### Classic Load Balancer _(OG, Legacy Load Balancer)_
+
+Used to load balance HTTP(S) applications and use Layer 7-specific features, such as X-Forwarded and stick-sessions. You can use strict Layer 4 load balancing for applications that rely purely on the TCP protocol.
+
+#### 504 Error
+
+If no response or timeout, the ELB (Elastic Load Balancer) responds with status code 504.
+
+Internal Server Error type - DB Layer or Web Server Layer.
+
+Identify issue where failing and scale up or out where possible.
+
+
+
+
+

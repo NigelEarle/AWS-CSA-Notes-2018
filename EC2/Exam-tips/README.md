@@ -78,3 +78,14 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - EBS backed instances can be stopped. You will not los the data on this instance if it is stopped.
 - You can reboot both, you will not lose your data.
 - By default, both ROOT volumes will be deleted on termination, however with EBS volumes, you can tell AWS to keep the root device volume.
+
+
+## Load Balancers
+
+- 3 Types of Load Balancers
+  - Application Load Balancers
+  - Network Load Balancers
+  - Classic Load Balancers
+- 504 Error means the gateway has timed out. Application is not responding within the idle timeout period
+  - Trouble shoot the applcation. Web Server or Database Server?
+- If you need IPv4 address of your end user, look fro the X-Forwarded-For header.
