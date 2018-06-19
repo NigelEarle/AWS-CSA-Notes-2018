@@ -182,3 +182,15 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 - Storage for the Root Device (Root Device Volume)
   - Instance Store (Ephemeral Store)
   - EBS Backed Volumes
+
+### EBS vs. Instance Store
+
+All AMIs are categorized as either backed by Amazon EBS or backed by instance store.
+
+**_For EBS Volumes:_**
+
+The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot.
+
+**_For Instance Store Volumes:_**
+
+The root device for an instance launched from the AMI is an instance store volume created from a template stored in Amazon S3.

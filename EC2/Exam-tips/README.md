@@ -70,3 +70,11 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - Volumes restored from encrypted snapshots are encrypted automatically.
 - You can share snapshots, but only if they are unencrypted.
   - These snapshots can be shared with other AWS accounts or made public.
+
+### EBS vs. Instance Store
+
+- Instance store volumes are sometimes called _Ephemeral Storage_.
+- Instance store volumes cannot be stopped. If the underlying host fails, you will lose all your data.
+- EBS backed instances can be stopped. You will not los the data on this instance if it is stopped.
+- You can reboot both, you will not lose your data.
+- By default, both ROOT volumes will be deleted on termination, however with EBS volumes, you can tell AWS to keep the root device volume.
