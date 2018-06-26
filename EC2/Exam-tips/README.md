@@ -93,3 +93,15 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - Health Checks check the instance health by talking to it.
 - ELB's have their own DNS name. You are **never** given an IP address.
 - Read the ELB FAQ for Classic Load Balancers
+
+## CloudWatch
+
+- Standard Monitoring - 5 minutes
+- Detailed Monitoring - 1 minute
+
+### What can you do with CloudWatch? (Not to be confused with CloudTrail)
+
+- **Dashboards** - Creates awesome dashboards to see/monitor what is happening with your AWS environment.
+- **Alarms** - Allows you to set Alarms that notify you when a particular thresholds are hit.
+- **Events** - Helps you to repsond to state changes in your AWS resources.
+- **Logs** - Helps you to aggregate, monitor and store logs.
