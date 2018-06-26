@@ -79,7 +79,6 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - You can reboot both, you will not lose your data.
 - By default, both ROOT volumes will be deleted on termination, however with EBS volumes, you can tell AWS to keep the root device volume.
 
-
 ## Load Balancers
 
 - 3 Types of Load Balancers
@@ -89,3 +88,8 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - 504 Error means the gateway has timed out. Application is not responding within the idle timeout period
   - Trouble shoot the applcation. Web Server or Database Server?
 - If you need IPv4 address of your end user, look fro the X-Forwarded-For header.
+
+- Instances are monitored but ELB are reported as `InService` or `OutofService`.
+- Health Checks check the instance health by talking to it.
+- ELB's have their own DNS name. You are **never** given an IP address.
+- Read the ELB FAQ for Classic Load Balancers
