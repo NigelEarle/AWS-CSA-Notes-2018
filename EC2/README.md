@@ -219,15 +219,8 @@ Best suited for load balancing of TCP traffic where extreme performance is requi
 
 Used to load balance HTTP(S) applications and use Layer 7-specific features, such as X-Forwarded and stick-sessions. You can use strict Layer 4 load balancing for applications that rely purely on the TCP protocol.
 
-#### 504 Error
+### 504 Error
 
-If no response or timeout, the ELB (Elastic Load Balancer) responds with status code 504.
-
-Internal Server Error type - DB Layer or Web Server Layer.
-
-Identify issue where failing and scale up or out where possible.
-
-
-
-
-
+- If no response or timeout, the ELB (Elastic Load Balancer) responds with status code 504.
+- Internal Server Error type - DB Layer or Web Server Layer.
+- Solution: Identify issue where failing and scale up or out where possible.
