@@ -105,3 +105,13 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - **Alarms** - Allows you to set Alarms that notify you when a particular thresholds are hit.
 - **Events** - Helps you to repsond to state changes in your AWS resources.
 - **Logs** - Helps you to aggregate, monitor and store logs.
+
+## Placement Groups
+
+- A Clustered Placement Group cant span multiple Availibitity Zones.
+- A Spread Placement Group can.
+- The name you specify for a placement group must be unique within your aws account.
+- Only certain types of instances can be launched in a placement group (Compute Optimized, GPU, Memory Optimized, Storage Optimized)
+- AWS recommend homogenous instances within placement groups.
+- You cant merge placement groups
+- You cant move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.

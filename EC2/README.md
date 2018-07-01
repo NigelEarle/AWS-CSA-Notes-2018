@@ -224,3 +224,17 @@ Used to load balance HTTP(S) applications and use Layer 7-specific features, suc
 - If no response or timeout, the ELB (Elastic Load Balancer) responds with status code 504.
 - Internal Server Error type - DB Layer or Web Server Layer.
 - Solution: Identify issue where failing and scale up or out where possible.
+
+## Placement Groups (Exam MUST KNOW!!)
+
+### Two Types of Placement Groups
+
+**Clustered Placement Group**
+
+A cluster placement group is a grouping of instances within a **single** Availibility Zone. Placement groups are recommended for applications that need low network latency, high network throughput, or both.
+
+_NOTE: Only a certain number instances can be launched in to a Clustered Placement Group._
+
+**Spread Placement Group**
+
+Opposite of a Clustered Placement Group. A Spread Placement Group is a group of instances that are each placed on distinct underlying hardware. Spread Placement Groups are recommended for applications that have a small number of critical instances that should be kept separate from each other.
