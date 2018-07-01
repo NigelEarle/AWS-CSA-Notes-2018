@@ -238,3 +238,17 @@ _NOTE: Only a certain number instances can be launched in to a Clustered Placeme
 **Spread Placement Group**
 
 Opposite of a Clustered Placement Group. A Spread Placement Group is a group of instances that are each placed on distinct underlying hardware. Spread Placement Groups are recommended for applications that have a small number of critical instances that should be kept separate from each other.
+
+## EFS (Elastic File System)
+
+AWS EFS is file storage service for AWS EC2 instances. Amazon EFS is easy to use and provides a simple interface that allows you to create and configure file systems quickly and easily. With AWS EFS, storage capacity is elastic, growing and shrinking automatically as you add and remove files, so your applications have the storage they need, when they need it.
+
+### EFS Features
+
+- Supports the Network File System version 4 (NFSv4) protocol
+- You only pay for the storage you use (no pre-provisioning required)
+- Can scale up to the petabytes
+- Can support thousands of concurrent NFS connections
+- Data is stored across multiple AZ's within a region
+- Read After Write Consistency
+
