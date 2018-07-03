@@ -253,3 +253,23 @@ AWS EFS is file storage service for AWS EC2 instances. Amazon EFS is easy to use
 - Read After Write Consistency
 
 ## Lambda
+
+### What is Lambda?
+
+AWS Lambda is a compute service where you can upload your code and create Lambda function. AWS Lambda takes care of provisioning and managing the servers that you use to run the code. Worry free from OS, patching, scaling, etc.
+
+**Use Cases**
+
+- As an event-driven compute service where AWS Lambda runs your code in response to events. These events could be changes to data in an Amazon S3 bucket or an Amazon DynamoDB table.
+
+- As a compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs.
+
+**Encapsulation of the following:**
+
+- Data Centers
+- Hardware
+- Assembly Code/Protocols
+- High Level languages
+- Operation Systems
+- Application Layer/AWS API's
+- AWS Lambda
