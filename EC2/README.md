@@ -252,3 +252,4 @@ AWS EFS is file storage service for AWS EC2 instances. Amazon EFS is easy to use
 - Data is stored across multiple AZ's within a region
 - Read After Write Consistency
 
+## Lambda
