@@ -115,3 +115,17 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - AWS recommend homogenous instances within placement groups.
 - You cant merge placement groups
 - You cant move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.
+
+## Lambda
+
+- Lambda scales horizontally (not vertically) automatically. Redundancy
+- Lambda functions are independent, 1 event = 1 function
+- Lambda is serverless
+- Know what services are serverless!!
+  - S3
+  - API Gateway
+  - DynamoDB
+- Lambda funcitons can trigger other lambda functions, 1 event can = x functions if functions trigger other functions.
+- Architectures can get extremely complicated, AWS X-ray allows you to debug what is happening
+- Lambda can do things globally, you can use it to back up S3 buckets to other S3 buckets etc.
+- Know your triggers
