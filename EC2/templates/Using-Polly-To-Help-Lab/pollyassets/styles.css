@@ -1,0 +1,66 @@
+.buttons {
+	border : solid 0px #e6b215;
+	border-radius : 8px;
+	moz-border-radius : 8px;
+	font-size : 16px;
+	color : #ffffff;
+	padding : 5px 18px;
+	background-color : #FF9900;
+	cursor:pointer;
+}
+
+.buttons:hover {
+	background-color:#ffc477;
+}
+
+.buttons:active {
+	position:relative;
+	top:1px;
+}
+
+#newPost {
+	margin: 0 auto;
+	width: 90%;
+}
+
+#charCounter { float:right }
+
+textarea {
+  width:		100%;
+	height: 	10em;
+}
+
+#content {
+  width: 90% ;
+  margin-left: auto ;
+  margin-right: auto;
+	margin-bottom: 10px;
+	font-family:verdana, sans-serif;
+	word-spacing:4pt;
+	font-size:14px;
+}
+
+#posts {
+	font-weight:normal;
+	color:#000000;
+	word-spacing:4pt;
+	font-size:10px;
+	text-align:left;
+	font-family:verdana, sans-serif;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#posts th {
+	background-color: #FF9900;
+	color: white;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+#posts td {
+	padding: 8px;
+	border-color: #666666;
+	background-color: #ffffff;
+	border-bottom: 1px solid #ddd;
+}
