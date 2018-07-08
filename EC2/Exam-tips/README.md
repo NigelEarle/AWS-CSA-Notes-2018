@@ -111,7 +111,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 
 ## Placement Groups
 
-- A Clustered Placement Group cant span multiple Availibitity Zones.
+- A Clustered Placement Group can not span multiple Availibitity Zones.
 - A Spread Placement Group can.
 - The name you specify for a placement group must be unique within your aws account.
 - Only certain types of instances can be launched in a placement group (Compute Optimized, GPU, Memory Optimized, Storage Optimized)
@@ -239,8 +239,8 @@ AMIs are regional. You can only launch an AMI from the region in which its store
 ### Instance Metadata
 
 - Used to get information about an instance (public IP, DNS etc)
-  - `curl http&#58;//169.254.169.254/latest/meta-data`
-  - `curl http&#58;//169.254.169.254/latest/user-data`
+  - `curl http://169.254.169.254/latest/meta-data`
+  - `curl http://169.254.169.254/latest/user-data`
 
 ### EFS (Elastic File System)
 
