@@ -16,17 +16,17 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 
 ## Instance Types
 
-**F.** - FGPA
-**I.** - IOPS
-**G.** - Graphics
-**H.** - High Disk Throughput
-**T.** - Cheap General Purpose (think T2 Micro)
-**D.** - Density
-**R.** - Ram
-**M.** - Main choice for general purpose applications
-**C.** - Compute
-**P.** - Grahics(Pics)
-**X.** - Extreme Memory
+- **F.** - FGPA
+- **I.** - IOPS
+- **G.** - Graphics
+- **H.** - High Disk Throughput
+- **T.** - Cheap General Purpose (think T2 Micro)
+- **D.** - Density
+- **R.** - Ram
+- **M.** - Main choice for general purpose applications
+- **C.** - Compute
+- **P.** - Grahics(Pics)
+- **X.** - Extreme Memory
 
 ## Volume Types
 
@@ -96,6 +96,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - Health Checks check the instance health by talking to it.
 - ELB's have their own DNS name. You are **never** given an IP address
 - Read the ELB FAQ for Classic Load Balancers
+
 ## CloudWatch
 
 - Standard Monitoring - 5 minutes
