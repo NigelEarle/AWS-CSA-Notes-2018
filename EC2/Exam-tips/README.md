@@ -236,8 +236,8 @@ AMIs are regional. You can only launch an AMI from the region in which its store
 ### Instance Metadata
 
 - Used to get information about an instance (public IP, DNS etc)
-  - **curl http&#58;//169.254.169.254/latest/meta-data**
-  - **curl http&#58;//169.254.169.254/latest/user-data**
+  - `curl http&#58;//169.254.169.254/latest/meta-data`
+  - `curl http&#58;//169.254.169.254/latest/user-data`
 
 ### EFS (Elastic File System)
 
