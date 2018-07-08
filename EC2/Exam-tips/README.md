@@ -85,15 +85,17 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
   - Application Load Balancers
   - Network Load Balancers
   - Classic Load Balancers
+
+
 - 504 Error means the gateway has timed out. Application is not responding within the idle timeout period
   - Trouble shoot the applcation. Web Server or Database Server?
-- If you need IPv4 address of your end user, look fro the X-Forwarded-For header.
 
+
+- If you need IPv4 address of your end user, look fro the X-Forwarded-For header.
 - Instances are monitored but ELB are reported as `InService` or `OutofService`.
 - Health Checks check the instance health by talking to it.
-- ELB's have their own DNS name. You are **never** given an IP address.
+- ELB's have their own DNS name. You are **never** given an IP address
 - Read the ELB FAQ for Classic Load Balancers
-
 ## CloudWatch
 
 - Standard Monitoring - 5 minutes
