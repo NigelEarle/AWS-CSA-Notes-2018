@@ -97,6 +97,8 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - ELB's have their own DNS name. You are **never** given an IP address
 - Read the ELB FAQ for Classic Load Balancers
 
+_Note: ELB's do not have IP Addresses, only found by DNS namespace_
+
 ## CloudWatch
 
 - Standard Monitoring - 5 minutes
