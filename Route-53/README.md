@@ -60,3 +60,5 @@ An A Record is the fundamental type of DNS record and the 'A' in A record stands
 
 ### TTL
 
+The length that a DNS record is cached on eitherthe Resolving Server o the users own local PC is equal to the value of the 'Time To Live' _(TTL)_ in seconds. The lower the time to live, the faster changes to DNS records take to propagate throughout the internet. 
+
