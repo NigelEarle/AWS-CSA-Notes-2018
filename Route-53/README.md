@@ -62,3 +62,12 @@ An A Record is the fundamental type of DNS record and the 'A' in A record stands
 
 The length that a DNS record is cached on eitherthe Resolving Server o the users own local PC is equal to the value of the 'Time To Live' _(TTL)_ in seconds. The lower the time to live, the faster changes to DNS records take to propagate throughout the internet. 
 
+### CNAMES
+
+A Canonical Name (CName) can be used to resolve one domain name to another. For example, you may have a mobile website with a domain name `http://m.acloud.guru` that is used for when users browse to your domain name on their mobile devices. You may also want the name `http://mobile.acloud.guru` to resolve to this same address.
+
+### Alias Records
+
+Alias resource record sets can save you time because AWS Route 53 automatically recognizes changes in the record sets that the alias resource record set refers to.
+
+For example, suppose an alias resource record set for example.com points to an ELB load balancer at lb1-1234.us-west-1.elb.amazonaws.com. If the IP address of the load balancer change, AWS Route 53 will automatically reflect those changes in DNS answers for example.com whout any changes to the hosted zone that contains resource record sets for example.com
