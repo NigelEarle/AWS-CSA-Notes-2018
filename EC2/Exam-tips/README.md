@@ -267,4 +267,4 @@ AMIs are regional. You can only launch an AMI from the region in which its store
 **Know the differences between and why you would use...**
 
 - Clustered Placement Groups
-- Spread Placemnet Groups
+- Spread Placement Groups
