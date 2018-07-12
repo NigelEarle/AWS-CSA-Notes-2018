@@ -72,7 +72,6 @@ Alias resource record sets can save you time because AWS Route 53 automatically 
 
 For example, suppose an alias resource record set for example.com points to an ELB load balancer at lb1-1234.us-west-1.elb.amazonaws.com. If the IP address of the load balancer change, AWS Route 53 will automatically reflect those changes in DNS answers for example.com whout any changes to the hosted zone that contains resource record sets for example.com
 
-
 ## Routing Policies
 
 ### Simple
@@ -80,6 +79,9 @@ For example, suppose an alias resource record set for example.com points to an E
 This is the default routing policy when you create a new record set. This is the most commonly used when you have a single resource that performs a given function for your domain, for example, one web server that serves content for the `http://acloud.guru` website.
 
 ### Weighted
+
+Weighted Routing Policies let you split your traffic based on different weights assigned.
+For example you can set 10% of your traffic to go to US-EAST-1 and 90% to go to EU-WEST-1
 
 ### Latency
 
