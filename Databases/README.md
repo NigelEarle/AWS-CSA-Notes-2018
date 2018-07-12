@@ -26,6 +26,22 @@ Relational databases are what most of us are all used to. They have been around 
 
 ### Non-Relational (NoSQL)
 
+- Database
+  - Collection => Table
+  - Document => Row
+  - Key, Value Pairs => Columns
+
+**_Non Relational Databases Examples_**
+
+```json
+{
+  "_id": "394ejojaj903091881dnna",
+  "name": "nigel",
+  "age": 30,
+  "location": "San Diego"
+}
+```
+
 ### Data Warehousing
 
 Used for business intelligence. Tools like Cognos, Jaspersoft, SQL Server, Reporting Services, Oracle Hyperion, SAP NetWeaver.
@@ -63,3 +79,11 @@ Sales price - unit cost
 
 Data Warehousing databases use different type of architecture both from a database perspective and infrastructure layer.
 
+### Elasticache
+
+ElastiCache is a web service that makes it easy to deploy, operate and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases.
+
+ElasticCache supports two open-source in-memory caching engines...
+
+1. Memcached
+2. Redis
