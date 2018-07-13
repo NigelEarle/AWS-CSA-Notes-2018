@@ -89,3 +89,19 @@ ElasticCache supports two open-source in-memory caching engines...
 
 1. Memcached
 2. Redis
+
+## Backups
+
+There are 2 types of backups for AWS: Automated and DB Snapshots
+
+### Automated Backups
+
+Automated Backups allow you to recover your database to any point in time within a 'retention period'. The retention period can be between one and 35 days.
+
+Automated Backups will take a full daily snapshot and will also store transaction logs throughout the day.
+
+When you do a recovery, AWS will first choose the most recent daily backup, and then apply transaction logs relevant to that day. This allows you to do a point in time recovery down to a second, within a retention period.
+
+### Database Snapshots
+
+DB Snapshots are done manually (ie they are user initiated) They are stored even after you delete the original RDS instance, unlike automated backups.
