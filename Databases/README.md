@@ -105,3 +105,9 @@ When you do a recovery, AWS will first choose the most recent daily backup, and 
 ### Database Snapshots
 
 DB Snapshots are done manually (ie they are user initiated) They are stored even after you delete the original RDS instance, unlike automated backups.
+
+### Restoring Backups
+
+Whenever you restore either an Automatic Backup or a manual Snapshot, the restored version of the database will be a new RDS instance with a new DNS endpoint
+
+`original.us-west-1.rds.amazonaws.com`  ->  `restored.eu-west-1.rds.amazonaws.com` 
