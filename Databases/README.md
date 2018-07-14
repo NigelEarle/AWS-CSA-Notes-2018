@@ -233,4 +233,14 @@ When loading data into an empty table, Redshift automatically samples you data a
 
 **Massive Parallel Processing (MPP)** - Redshift automatically distributes data and query load across all nodes. Redshift makes it easy to add nodes to your data warehouse and enables you to maintain fast query performance as your data warehouse grows.
 
+### Pricing
 
+**How is Redshift priced?**
+
+- Compute Node Hours
+  - Total number of hours you run across all your compute nodes for the billing period
+  - Billed for 1 unit per node per hour, so a 3 - node data warehouse cluster running persistently for an entire month would incur 2,160 instance hours.
+  - You will **not** be charged for leader node hours; only compute nodes will incur charges
+
+- Backups
+- Data transfers (Only within a VPC, not outside of it)
