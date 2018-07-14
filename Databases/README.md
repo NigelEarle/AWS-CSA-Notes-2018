@@ -228,3 +228,9 @@ Since only the columns involved in the queries are processing and columnar data 
 Redshift employs multiple compression techniques and can often achieve significant compression relative to traditional relational data stores. In addition, Redshift doesn't require indexes or materialized views and so uses less space than traditional relational database systems.
 
 When loading data into an empty table, Redshift automatically samples you data and selects the most appropriate compression scheme.
+
+### MPP
+
+**Massive Parallel Processing (MPP)** - Redshift automatically distributes data and query load across all nodes. Redshift makes it easy to add nodes to your data warehouse and enables you to maintain fast query performance as your data warehouse grows.
+
+
