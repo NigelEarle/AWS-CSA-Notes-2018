@@ -155,7 +155,7 @@ Read replicas allow you to have a read-only copy of your production database. Th
 - MariaDB
 - Aurora
 
-### DynamoDB
+## DynamoDB
 
 DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed db nd supports both document and key-value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, IoT etc.
 
@@ -171,7 +171,7 @@ DynamoDB is a fast and flexible NoSQL database service for all applications that
 
 **NOTE:** Super easy to scale! Push button scaling
 
-#### Pricing
+### Pricing
 
 Pricing is based on provision throughput capacity
 
@@ -200,3 +200,8 @@ Calc WRITE Capacity Units = (0.0065 / 10) x 12 x 24 = $0.1872
 Calc READ Capacity Units = (0.0065 / 10) x 12 x 24 = $0.0374
 ```
 
+## Redshift
+
+Amazon Redshift is a fast and powerful, fully managed petabyte-scale data warehouse service in the cloud. 
+
+Customers can start small for just $0.25 per hour with no commitments or upfront costs and scale to a petabyte or more for $1,000 per terabyte per year, less than 1/10 of most data warehousing solutions.
