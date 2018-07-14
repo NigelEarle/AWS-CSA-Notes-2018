@@ -244,3 +244,16 @@ When loading data into an empty table, Redshift automatically samples you data a
 
 - Backups
 - Data transfers (Only within a VPC, not outside of it)
+
+### Security
+
+- Encrypted in transit using SSL
+- Encrypted at rest using AES-256 encryption
+- By default Redshift takes care of key management
+  - Manages your keys through HSM (Hardware Security Module)
+  - AWS Key Management Service (KMS)
+
+### Availability
+
+- Currently only available in 1 AZ - Realistically only for business logic
+- Can restore snapshots to new AZ's in the event of outage.
