@@ -24,3 +24,9 @@ Redshift is a good answer if the reason your database is feeling stress is becau
 - Elasticache - In Memory Caching
   - Memacached
   - Redis
+
+---
+
+#### READ FAQ RDS SECTION IN DOCUMENTATION!!
+
+[https://aws.amazon.com/rds/faqs/](https://aws.amazon.com/rds/faqs/)
