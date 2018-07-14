@@ -154,3 +154,47 @@ Read replicas allow you to have a read-only copy of your production database. Th
 - PostgreSQL
 - MariaDB
 - Aurora
+
+### DynamoDB
+
+DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed db nd supports both document and key-value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, IoT etc.
+
+- Stored on SSD Storage
+- Spread Across **3** geographically distinct data centers
+
+- Eventual Consistent Read (Default)
+  - Consistency across all copies of data is usually reached within a second. Repeating a read after a short amount of time should return the updated data. (Best Read Perf.)
+
+
+- Strongly Consistent Reads
+  - A stronly consistent read returns a result that reflects all writes that received a successful response prior to the read.
+
+
+#### Pricing
+
+Pricing is based on provision throughput capacity
+
+- Write Throughput $0.0065 per hour for every 10 units
+- Read Throughput $0.0065 per hour for every 50 units
+- Storage costs of $0.25G per month
+
+_Pricing Example:_
+
+```
+Constraint: 1 million WRITEs and 1 million READs per day, while storing 3G of data.
+
+First, calculate how many writes and reads per second you need.
+
+1 million evenly spread writes per day is equivalent to 1,000,000 (writes) /24 (hours) / 60 (minutes) / 60 (seconds) = 11.6 writes per second.
+
+-- BREAKDOWN --
+
+DynamoDB WRITE Capacity Unit - 1 per second = 12
+DynamoDB READ Capacity Unit - 1 per second = 12
+
+READ Capacity Units - billed in blocks of 50
+WRITE Capacity Units - billed in blocks of 10
+
+Calc WRITE Capacity Units = (0.0065 / 10) x 12 x 24 = $0.1872
+Calc READ Capacity Units = (0.0065 / 10) x 12 x 24 = $0.0374
+```
