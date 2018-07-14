@@ -220,3 +220,11 @@ Customers can start small for just $0.25 per hour with no commitments or upfront
 Unlike row-based systems, which are ideal for transaction processing, column-based systems are ideal for data warehousing and analytics, where queries often invovle aggregates performed over large data sets.
 
 Since only the columns involved in the queries are processing and columnar data is stored sequentially on the storage media, column-based systems require far fewer I/Os, greatly improving query performance.
+
+### Compression
+
+**Advanced Compression** - Columnar data storescan be compressed much more than row-based data stores because similar data is stored sequentially on disk.
+
+Redshift employs multiple compression techniques and can often achieve significant compression relative to traditional relational data stores. In addition, Redshift doesn't require indexes or materialized views and so uses less space than traditional relational database systems.
+
+When loading data into an empty table, Redshift automatically samples you data and selects the most appropriate compression scheme.
