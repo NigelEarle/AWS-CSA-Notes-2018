@@ -257,3 +257,22 @@ When loading data into an empty table, Redshift automatically samples you data a
 
 - Currently only available in 1 AZ - Realistically only for business logic
 - Can restore snapshots to new AZ's in the event of outage.
+
+## Elasticache
+
+ElastiCache is a web service that makes it easy to deploy, operate and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, mananged, in-memory caches, instead of relying entirely on slower disk-based databases.
+
+### Why ElastiCache?
+
+ElastiCache can be used to significantly improve latency and throughput for many read-heavy application workloads - ie networking, gaming, media sharing and Q&A portals or compute intensive workloads.
+
+Caching improves application performance by storing critical pieces of data in memory for low-latency access. Cached information may include the results of I/O intensive database queries or the results of computational intensive calculations
+
+### Types of Elasticache
+
+- Memcached
+  - A widely adopted memory object caching system. Elasticache is protocol compliant with Memcached, so popular tools that you use today with existing Memcached environments will work seamlessly with the service.
+
+- Redis
+  - A popular open-source in-memory key-value store that supports data structures such as sorted sets and lists. ElastiCache supports Master/Slave replcation and Multi-AZ which can be used to achieve cross AZ redundancy.
+
