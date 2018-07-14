@@ -276,3 +276,21 @@ Caching improves application performance by storing critical pieces of data in m
 - Redis
   - A popular open-source in-memory key-value store that supports data structures such as sorted sets and lists. ElastiCache supports Master/Slave replcation and Multi-AZ which can be used to achieve cross AZ redundancy.
 
+## Aurora
+
+### What is Aurora?
+
+Aurora is a MySQL-compatible,relational database engine that combines the speed and availability of high-end commercial databases with the simplicity and cost effectiveness of open source databases. Aurora provides up to 5x better performance than MySQL at a price point of 1/10 that of a commercial database while delivering similar performance and availability
+
+### Scaling
+
+- Start with 10G, Scles in 10G increments to 64 TB (Storage Autoscaling)
+- Compute resource can scale up to 32vCPUs and 244G of Memory.
+- 2 copies of your data is contained in each availability zone, with minimum of 3 AZ -> 6 copies of your data! Highly redundant
+- Aurora storage is also self-healing. Data blocks and disks are continuously scanned for errors and repaird automatically.
+
+### Aurora Replicas
+
+- 2 Types of Replicas are available
+- Aurora Replicas - Up to 15 replicas currently
+- MySQL Replicas - Up to 5 replicas currently
