@@ -205,3 +205,18 @@ Calc READ Capacity Units = (0.0065 / 10) x 12 x 24 = $0.0374
 Amazon Redshift is a fast and powerful, fully managed petabyte-scale data warehouse service in the cloud. 
 
 Customers can start small for just $0.25 per hour with no commitments or upfront costs and scale to a petabyte or more for $1,000 per terabyte per year, less than 1/10 of most data warehousing solutions.
+
+### Configuration
+
+- Single Node (160Gb)
+- Multi-Node
+  - Leader Node _(manages client connections and receives queries)_
+  - Compute Node _(store data and perform queries and computations)_ - Up to 128 Compute Nodes
+
+### Columns
+
+**Columnar Data Storage** - Instead of storing data as rows, Redshift organizes the data by column.
+
+Unlike row-based systems, which are ideal for transaction processing, column-based systems are ideal for data warehousing and analytics, where queries often invovle aggregates performed over large data sets.
+
+Since only the columns involved in the queries are processing and columnar data is stored sequentially on the storage media, column-based systems require far fewer I/Os, greatly improving query performance.
