@@ -169,6 +169,7 @@ DynamoDB is a fast and flexible NoSQL database service for all applications that
 - Strongly Consistent Reads
   - A stronly consistent read returns a result that reflects all writes that received a successful response prior to the read.
 
+**NOTE:** Super easy to scale! Push button scaling
 
 #### Pricing
 
@@ -198,3 +199,4 @@ WRITE Capacity Units - billed in blocks of 10
 Calc WRITE Capacity Units = (0.0065 / 10) x 12 x 24 = $0.1872
 Calc READ Capacity Units = (0.0065 / 10) x 12 x 24 = $0.0374
 ```
+
