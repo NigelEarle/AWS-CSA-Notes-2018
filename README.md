@@ -46,3 +46,6 @@ Easier. Will not get results for 3 months afte completion. Across 5 different do
 | Design Cost-Optimized Architectures           | 10% |
 | Define Operationally-Excellent Architectures  | 6%  |
 
+----
+
+### WIP! Notes are unfinished as I am still working my way through the course! Thanks!
