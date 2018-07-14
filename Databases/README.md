@@ -287,6 +287,7 @@ Aurora is a MySQL-compatible,relational database engine that combines the speed 
 - Start with 10G, Scles in 10G increments to 64 TB (Storage Autoscaling)
 - Compute resource can scale up to 32vCPUs and 244G of Memory.
 - 2 copies of your data is contained in each availability zone, with minimum of 3 AZ -> 6 copies of your data! Highly redundant
+- Designed to transparently handle the loss of up to 2 copies of data withou affecting database write availability and up to 3 copies without affecting read availability.
 - Aurora storage is also self-healing. Data blocks and disks are continuously scanned for errors and repaird automatically.
 
 ### Aurora Replicas

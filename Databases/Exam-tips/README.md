@@ -7,3 +7,20 @@ You will be given a scenario where a particular database is under a lot of stres
 ElastiCache is a good choice if your database is particularly read heavy and not prone to frequent changing.
 
 Redshift is a good answer if the reason your database is feeling stress is because management keep running OLAP transactions on it etc.
+
+## Summary
+
+### Types
+
+- RDS - OLTP
+  - SQL
+  - MySQL
+  - PostgreSQL
+  - Oracle
+  - Aurora
+  - MariaDB
+- DynamoDB - NoSQL
+- Redshift - OLAP
+- Elasticache - In Memory Caching
+  - Memacached
+  - Redis
