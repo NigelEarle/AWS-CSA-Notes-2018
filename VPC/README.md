@@ -76,6 +76,10 @@ Use (cidr.xyz)[https://cidr.xyz/] to figure out subnet ranges within a VPC
 - NACL have separate inbound and outbound rules, and each rule can either allow or deny traffic.
 - NACL are stateless; responses to allowed inbound traffic are subject to the rules for outbund traffic
 
+## ALB
+
+- You need at least 2 public subnets in order to deply and application load balancer
+
 ## VPC Flow Logs
 
 VPC Flow Logs is a feature that enables you to capture info about the IP traffic going to and from network interfaces in your VPC. Flow log data is stored using Amazon Cloudwatch Logs.

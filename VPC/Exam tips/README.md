@@ -8,6 +8,7 @@
 - Security groups are Statful; NACLs are Stateless
   - Must open both inbound and outbound ports for NACLs
 - NO TRANSITIVE PEERING!!
+- Allowed 5 VPC's in each AWS Region by default
 
 ## Flow Logs
 
