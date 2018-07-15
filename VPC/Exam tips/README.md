@@ -22,3 +22,10 @@
 - Traffic to and from 169.254.169.254 for instance metadata
 - DHCP traffic
 - Traffic to the reserved IP address for the default VPC router
+
+## NAT vs Bastion
+
+- A NAT is used to provide internet traffic to EC2 instances in private subnets
+- A Bastion is used to securely administer EC2 instances using SSH or RDP
+
+`bastion host`  ->   `private server`
