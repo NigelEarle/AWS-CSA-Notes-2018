@@ -144,3 +144,18 @@ To prevent messages from being lost, all messages published to SNS are stored re
 - Convert media files from their original source format in to different formats that will play on smarphones, tablets, PCs etc.
 - Provides transcoding presets for popular output formats, which means that you dont need to guess about which settings work bets on particular devices.
 - Pay based on the minutes that you transcode and the resolution at which you transcode.
+
+## API Gateway
+
+API Gatewayis a fully managed service that makes it easy for developers to publish, maintain, monitor and secure APIs at any scale. With a few clicks in the AWS Management Console, you can create and API that acts as a "front door" for applications to access data, business logic, or functionality from you back-end services, such as applications running on EC2, code running on Lambda or any web application.
+
+### Caching
+
+You can enable API caching in API Gateway to cache your endpoints response. With caching, you can reduce the number of calls made to your endpoint and also improve the latency of the requests to your API.
+
+When you enable caching for a stage, API Gateway caches responses from your endpoint for a specified TTL period, in seconds. API Gateway then responds to the request by looking up the endpoint response from the cache instead of making a request to your endpoint.
+
+- Low cost & efficient
+- Scales effortlessly
+- You can throttle requests to prevent attacks
+- Connect to Cloudwatch to log all requests
