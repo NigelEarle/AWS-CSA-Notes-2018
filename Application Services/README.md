@@ -1,6 +1,6 @@
 # Application Services
 
-## SQS - Message Queue
+## SQS - Simple Queue Service
 
 First **EVER** AWS Service!
 
@@ -100,5 +100,20 @@ _JSON Domain Registration Example_
 - Amazon SWF ensures that a task is assigned **ONLY ONCE** and is **NEVER DUPLICATED**. With SQS, you need to handle duplicated messages and may also need to ensure that a message is processed only once.
 - Amazon SWF keeps track of all the tasks and events in an application. With SQS, you need to implement your own application level tracking, especially if your application uses multiple queues.
 
-## SNS
+## SNS - Simple Notification Service
 
+SNS is a web service that makes it easy to set up, operate and send notifications from the cloud. It provides developers with a highly scalable, flexible and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or ther applications
+
+May push notifications to Apple, Google, Fire OS and Windows devices as well as Android devices in China with Baidu Cloud Push.
+
+Besides pushing cloud notifications directly to mobile devices, SNS can also deliver notifications by SMS text message or emai, to SQS queues, or to any HTTP endpoint.
+
+SNS notifications can also trigger Lambda functions. When a messge is published to and SNS topic that has a Lambda function subscribed to it, the Lambda function is invoked with the payload of the published message. The Lambda function receives the message payload as an input parameter and can manipulate the information in the message, publish the message to other SNS topics, or send the message to other AWS services.
+
+### SNS Structure
+
+SNS allows you to group multiple recipients using topics. A topic is an "access point" for allowing recipients to dynamically subscribe for identical copies of the same notification. 
+
+One topic can support deliveries to multiple endpoint types - for example, you can group together iOS, Android and SMS recipients. When you publish once to a topic, SNS delivers appropriately formatted copies of your message to each subscriber.
+
+To prevent messages from being lost, all messages published to SNS are stored redundantly across multiple availability zones.
