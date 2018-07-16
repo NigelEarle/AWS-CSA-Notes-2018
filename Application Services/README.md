@@ -117,3 +117,23 @@ SNS allows you to group multiple recipients using topics. A topic is an "access 
 One topic can support deliveries to multiple endpoint types - for example, you can group together iOS, Android and SMS recipients. When you publish once to a topic, SNS delivers appropriately formatted copies of your message to each subscriber.
 
 To prevent messages from being lost, all messages published to SNS are stored redundantly across multiple availability zones.
+
+### SNS Benefits
+
+- Instantaneous, push-based delivery (no polling)
+- Simple APIs and easy integration with applications
+- Flexible message delivery over multiple transport protocols
+- Inexpensive, pay-as-you-go model with no up-front costs
+- Web-based AWS Management Console offers the simplicity of a point-and-click interface
+
+### SNS vs SQS
+
+- Both messaging services in AWS
+- SNS = push; SQS = polls (pulls)
+
+### Pricing
+
+- User pays $0.50 per 1 million SNS Requests
+- $0.06 per 100,000 notification deliveries over HTTP
+- $0.75 per 100 notifications deliveries over SMS
+- $2.00 per 100,000 notification deliveries over email
