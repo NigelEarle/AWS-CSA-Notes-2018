@@ -39,3 +39,23 @@ Be a pessimist when designing architectures in the cloud - assume things will fa
 - with time your application software _will_ fail too.
 
 Being a pessimist, you end up thinking about recovery strategies during design time, which helps in designing overall system better.
+
+### Decouple Your Components
+
+The key is to build components that do not have tight dependencies on each other, so that if once component were to die(fail), sleep(not respond) or remain busy(slow to respond) for some reason, the other components in the system are built so as to continue to work as if no failure is happening.
+
+In essence, loose coupling isolates the various layers and components of you application so that each component interacts async with the others and treats them as a "black box".
+
+**For Example...**
+
+In the case of web application architecture, you can isolate the app server from the web server and from the db. The app server does not know about your web server and vice versa, this gives decoupling between these layers and there are not dependencies code wise or functional perspectives.
+
+In the case of batch processing architecture, you can create async components that are independent of each other.
+
+### Implement Elasticity
+
+The cloud brings a new concept of elasticity in your applications. Elasticity can be implemented in 3 ways..
+
+1. **Proactive Cyclic Scaling:** Periodic scaling that occurs at a fixed interval (daily, weekly, monthly, quarterly)
+2. **Proactive Event-base Scaling:** Scaling just when you are expecting a big surge of traffic requests due to a scheduled business event (new product launch, marketing campaigns)
+3. **Auto-scaling based on demain:** By using monitoring service, you system can send triggers to take appropriate actions so that if scales up or down based on metrics (utilization of servers or network I/O)
