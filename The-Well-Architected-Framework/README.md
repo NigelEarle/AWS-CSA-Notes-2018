@@ -176,3 +176,63 @@ You can use detective controls to detect or identify a security breach. AWS Serv
   - VPC
 4. Detective Controls
   - AWS Cloud Trail, AWS Config, AWS Cloud Watch
+
+## Pillar 1 - Reliability
+
+The reliability pillar covers the ability of a system to recover from service or infrastructure outages/discruptions as well as the ability to dynamically acquire computing resources to meet demand.
+
+- Test recovery procedures
+- Automatically recover from failure - Netflix SimianArmy
+- Scale horizontally increase aggregate system availability
+- Stop guessing capacity
+
+### Definition
+
+Reliability in the cloud consists of 3 areas...
+
+1. Foudations
+2. Change Management
+3. Failure Management
+
+### Foundations
+
+With AWS, they handle most of the foundations for you. The cloud is designed to be essentially limitless meaning that AWS handle the networking and compute requirements themselves. However they do set the service limits to stop customers from accidentally over-provisioning resource
+
+https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
+
+**What questions should you be asking yourself?**
+
+- How are you managing AWS service limits for your account?
+- How are you planning your network topology on AWS?
+- Do you have an escalation path to deal with technical issues?
+
+### Change Management
+
+You need to be aware of how change affects a system so that you can plan procatively around it. Monitoring allows you to detect any changes to your environment and react. In traditional systems, change control is done manually and are carefully co-ordinated with auditing.
+
+With AWS things are a lot easier, you can use CloudWatch to monitor your environment and services such as autoscaling to automate change in response on your production environment
+
+**What questions should you be asking yourself?**
+
+- How does your system adapt to changes in demand?
+- How are you monitoring AWS resources?
+- How are ou executing change management?
+
+### Failure Mangement
+
+With cloud, you should always architect your systems with the assumptons that failure will occur. You should become aware of these failures, how they occured, how to respond to them and then plan on how to prevent these from happening again.
+
+**What questions should you be asking yourself?**
+
+- How are you backing up your data?
+- How does your system withstand component failures?
+- How are you planning for recovery?
+
+### Key AWS Services
+
+1. Foundations
+  - IAM, VPC
+2. Change Mangement
+  - AWS CloudTrail
+3. Failure Management
+  - AWS CloudFormation
