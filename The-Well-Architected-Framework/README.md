@@ -59,3 +59,34 @@ The cloud brings a new concept of elasticity in your applications. Elasticity ca
 1. **Proactive Cyclic Scaling:** Periodic scaling that occurs at a fixed interval (daily, weekly, monthly, quarterly)
 2. **Proactive Event-base Scaling:** Scaling just when you are expecting a big surge of traffic requests due to a scheduled business event (new product launch, marketing campaigns)
 3. **Auto-scaling based on demain:** By using monitoring service, you system can send triggers to take appropriate actions so that if scales up or down based on metrics (utilization of servers or network I/O)
+
+## The Well Architected Framework
+
+### What is the well architected framework?
+
+This has been developed by the Solutions Architecture team based on their experience with helping AWS customers. The well architected framework is a set of questions that you can use to evaluate how well your architecture is aligned to AWS best practices.
+
+### 5 Pillars of the Well Architected Framework
+
+- Security
+- Reliability
+- Performance Efficiency
+- Cost Optimization
+- Operation Excellence
+
+### Structure of each pillar
+
+- Design Principles
+- Definition
+- Best Practices
+- Key AWS Services
+- Resources
+
+### General Design Principles
+
+- Stop guessing your capacity needs
+- Test systems at production scale
+- Automate to make architectural experimentation easier
+- Allow for evolutionary architectures
+- Data-driven architectures
+- Improve through game days
