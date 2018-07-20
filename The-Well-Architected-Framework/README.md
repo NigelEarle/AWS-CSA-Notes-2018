@@ -90,3 +90,89 @@ This has been developed by the Solutions Architecture team based on their experi
 - Allow for evolutionary architectures
 - Data-driven architectures
 - Improve through game days
+
+## Pillar 1 - Security
+
+### Design Principles
+
+- Apply security at all layers!
+- Enable tracibility
+- Automate responses to security events
+- Focus on securing your system
+- Automate security best practices
+
+### Definitions
+
+Security in the cloud consists of 4 areas...
+
+#### Data Protection
+
+Before you begin to architect security practices across your environment, **basic data classification should be in place**. You should organize and classify your data in to segments such as publicly available, available to only members of your organization, available to only certain members of your organization, available only to the board etc.
+
+You should also implement a least privilege access system so that people are only able to access what they need. However most importantly, you should encrypt everthing where possible, whether it be at rest or in transit.
+
+**In AWS the following practices help to protect your data...**
+
+- AWS customers maintain full control over their data
+- AWS makes it easier for you to encrypt your data and manage keys, including regular key rotation, which can be easily automated natively by AWS or maintained by a customer.
+- Detailed logging is available that contains important content, such as file access and changes.
+- AWS has designed storage systems for exceptional resiliency. As an example, Amazon S3 is designed for 11, 9's of durability. (if you store 10,000 objects with AWS S3, you can on average expect to incur a loss of a single object once every 10,000,000 years)
+- Versioning, which can be part of a larger data lifecycle-management process, can protect against accidental overwrites, deletes and similar harm
+- AWS never initiates the movement of data between regions. Content placed in a region will remain in that region unless the customer explicitly enable a feature or leverages a service that provides that functionality
+
+**What questions should you be asking yourself?**
+
+- How are you encrypting your data at rest?
+- How are you encrypting your data in transit (SSL)?
+
+#### Privilege Management
+
+Privilege Management ensures that only authorized and authenticated users are able to access your resources, and only in a manner that is intended.
+
+**This can include**
+
+- Access Control Lists (ACLs)
+- Role Based Access Controls
+- Password Management (such as password rotation policies)
+
+**What questions should you be asking yourself?**
+
+- How are you protecting access to and use the AWS root account credentials?
+- How are you defining roles and responsibilites of system users to control human access to the AWS Management Console and APIs?
+- How are you limiting automated access (such as frmo applications, scripts, or 3rd party tools or services) to AWS resources?
+- How are you managing keys and credentials?
+
+#### Infrastructure Protection
+
+Outside of Cloud, this is how you protect your data center. RFID controls, security, lockable cabinets, CCTV etc. Within AWS they handle this so Infrastructure Protection exists at a VPC level.
+
+**What questions should you be asking yourself?**
+
+- How are you enforcing network and host-level boundary protection?
+- How are you enforcing AWS service level protection?
+- How are you protecting the integrity of the OS on your AWS EC2 instances?
+
+#### Detective Controls
+
+You can use detective controls to detect or identify a security breach. AWS Services to achieve this include
+
+- AWS Cloudtrail
+- AWS CloudWatch
+- AWS Config
+- AWS S3
+- AWS Glacier
+
+**What questions should you be asking yourself?**
+
+- How are you capturing and analyzing your logs?
+
+### Key AWS Services
+
+1. Data Protection
+  - Encrypt both in transit and at rest using - ELB, EBS, S3 and RDS
+2. Privilege Management
+  - IAM, MFA
+3. Infrastructure Protection
+  - VPC
+4. Detective Controls
+  - AWS Cloud Trail, AWS Config, AWS Cloud Watch
