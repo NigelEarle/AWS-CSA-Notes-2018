@@ -404,3 +404,102 @@ You should keep track of the changes made to AWS and constantly re-evaluate your
   - CloudWatch Alarms, SNS
 4. Optimizing Over Time
   - AWS Blog, AWS Trusted Advisor
+
+## Pillar 5 - Operational Excellence
+
+The Operational Excellence pillar includes operational practices and procedures used to manage production workloads
+
+This includes how planned changes are executed, as well as responses to unexpected operational events.
+
+Change execution and responses should be automated. All processes and procedures of operational excellence should be documented, tested and regularly reviewed
+
+### Design Principles
+
+- Perform operations with code
+- Align operations processes to business objectives
+- Make regular, small, inceremental changes
+- Test for responses to unexpected events
+- Learn from operational events and failures
+- Keep operations procedures current
+
+### Definition
+
+**There are 3 best practice areas of Operational Excellence in the cloud...**
+
+### Preperation
+
+Effective preparation is required to drive operational excellence. Operations checklists will ensure that workloads are ready for production operation, and prevent unintentional production promotion without effective preparation.
+
+Workloads should have...
+
+**Runbooks** - operations guidance that operations teams can refer to so they can perform normal daily tasks.
+
+**Playbooks** - guidance for responding to unexpected operational events. Playbooks should include response plans, as well as escalation paths and stakeholder notifications.
+
+In AWS there are several methods, services and features that can be used to support operational readiness and the ability to prepare for normal day-to-day operations as well as unexpected operational events.
+
+**CloudFormation** can be used to ensure that environments contain all required resources when deployed to prod and the configuration of the environment is based on tested best practices, which reduces the opportunity for human error.
+
+**Autoscaling** or other automated scaling mechanisms will allow workloads to automatically respond when business-related events affect operational needs.
+
+**AWS Config** with the AWS Config rules feature create mechanisms to automatically track and respond to changes in your AWS workloads and environments
+
+It is also important to use features like **tagging** to make sure all resources in a workload can be easily identified when needed during operations and respones.
+
+**What preperation questions should you ask yourself for operational excellence?**
+
+- What best practices for cloud operations are your using?
+- How are you doing configuration management for your workload?
+
+Be sure that documentation doesnt become stale or out of date! Documentation should be thorough!
+
+Without application designs, environment configs, resource configs, response plans, and mitgation plans documentation is not complete.
+
+If documentation is not updated and tested regularly, it will not be useful when unexpected operational events occur. If workloads are not reviewed before production, operations will be affected when undetected issues occur.
+
+If resources are not documented, when operational events occur, determining how to respond will be more difficult while the correct resources are identified.
+
+### Operation
+
+Operations should be standardized and manageable on a routine basis. The focus should be on automation, small frequent changes, regular QA testing, and defined mechanisms to track, audit, roll back and review changes.
+
+Changes should not be large and infrequent, they should not require scheduled downtime, and they should not require manual execution. A wide range of logs and metrics that are based on key operational indicators for a workload should be collected and reviewed to ensure continuous operations.
+
+**What questions should you be asking yourself for operational excellence?**
+
+- How are you evolving your workload while minimizing the impact of change?
+- How do you monitor your workload to ensure it is operating as expected?
+
+Routine operations, as well as responses to unplanned events, should be automated. Manual processes for deployments, release management, changes and rollbacks should **avoided**.
+
+Releases should **not** be large batches that are done infrequently.
+
+Rollbacks are more difficult in large changes, and failing ot have a rollback plan or the ability to mitigate failure impacts will prevent continuity of operations.
+
+Align monitoring to business needs, so that the responses are effective at maintaining business continuity. Monitoring that is ad hoc and not centralized, with responses that are manual, will cause more impact to operations during unexpected events.
+
+### Response
+
+Responses to unexpected operational events should be automated. This is not just for alerting but also for mitigation, remediation, rollback and recovery.
+
+Alerts should be timely and should invoke escalations when response are not adequate to mitigate the impact of operational events.
+
+QA mechanisms should be in place to automatically roll back failed deployments.
+
+Responses should follow a pre-defined playbook that includes stakeholders, the escalation process and procedures. Escalation paths should be defined and include both functional and hierarchical escalation capabilities. Heirarchical escalation should be automated and escalated priority should result in stakeholder notifications.
+
+**What questions should you be asking yourself?**
+
+- How do respond to unplanned operational events?
+- How is escalation managed when responding to unplanned operational events?
+
+### Key AWS Services
+
+1. **Preparation**
+  AWS Config provides a detailed inventory of your AWS resources and configuration, and continuously records configuration changes. AWS Service Catalog helps to create a standarized set of service offerings that are aligned to best practices. Designing workloads that use automation with services like AutoScaling, AWS SQS are good methods to ensure continuous operations in the event of unexpected operational events.
+2. **Operations**
+  AWS CodeCommit, AWS CodeDeploy and AWS CodePipeline can be used to manage and automate code changes to AWS workloads. Use AWS SDKs or 3rd party libs to automate operational changes. Use AWS CloudTrail to audit and track changes made to AWS environments
+3. **Responses**
+  Take advantage of all of the AWS CloudWatch service features for effective and automated responses. CloudWatch alarms can be used to set thresholds for alerting and notification and CloudWatch events can trigger notifications and automated responses.
+
+
