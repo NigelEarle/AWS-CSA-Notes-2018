@@ -105,7 +105,7 @@ This has been developed by the Solutions Architecture team based on their experi
 
 Security in the cloud consists of 4 areas...
 
-#### Data Protection
+### Data Protection
 
 Before you begin to architect security practices across your environment, **basic data classification should be in place**. You should organize and classify your data in to segments such as publicly available, available to only members of your organization, available to only certain members of your organization, available only to the board etc.
 
@@ -125,7 +125,7 @@ You should also implement a least privilege access system so that people are onl
 - How are you encrypting your data at rest?
 - How are you encrypting your data in transit (SSL)?
 
-#### Privilege Management
+### Privilege Management
 
 Privilege Management ensures that only authorized and authenticated users are able to access your resources, and only in a manner that is intended.
 
@@ -142,7 +142,7 @@ Privilege Management ensures that only authorized and authenticated users are ab
 - How are you limiting automated access (such as frmo applications, scripts, or 3rd party tools or services) to AWS resources?
 - How are you managing keys and credentials?
 
-#### Infrastructure Protection
+### Infrastructure Protection
 
 Outside of Cloud, this is how you protect your data center. RFID controls, security, lockable cabinets, CCTV etc. Within AWS they handle this so Infrastructure Protection exists at a VPC level.
 
@@ -152,7 +152,7 @@ Outside of Cloud, this is how you protect your data center. RFID controls, secur
 - How are you enforcing AWS service level protection?
 - How are you protecting the integrity of the OS on your AWS EC2 instances?
 
-#### Detective Controls
+### Detective Controls
 
 You can use detective controls to detect or identify a security breach. AWS Services to achieve this include
 
@@ -252,7 +252,7 @@ The Performance Efficiency pillar focuses on how to use computing resources effi
 
 **Performance Efficiency in the cloud consists of 4 areas...**
 
-#### Compute
+### Compute
 
 When architecting your system it is important to choose the right kind of server!!
 
@@ -267,7 +267,7 @@ With AWS servers are virtualized and at the click of a button (or API call) you 
 - How do you monitor your instances post launch to ensure they are performing as expected?
 - How do you ensure that the quantity of your instances match demand?
 
-#### Storage
+### Storage
 
 The optimal storage solutions for your environment depends on a number of factors
 
@@ -289,7 +289,7 @@ You can also easily move volumes between the different types of storage mediums.
 - How do you monitor your storage solution to ensure it is performing as expected?
 - How do you ensure that the capacity and throughput of your storage solutions matches demand?
 
-#### Database
+### Database
 
 The optimal database solution depends on a number of factors. Do you need database consistency, do you need high availability, do you need No-SQL, do you need DR etc.
 
@@ -302,7 +302,7 @@ With AWS you get a LOT of options. RDS, DynamoDB, Redshift etc.
 - How do you monitor your databases to ensure performance is as expected?
 - How do you ensure the capacity and throughput of your databases matches demand?
 
-#### Space-time trade-off
+### Space-time trade-off
 
 Using AWS you can use services such as RDS to add read replicas, reducing the load on your database and creating mutliple copies of the database. This helps to lower latency.
 
@@ -342,7 +342,7 @@ Use the Cost Optimization pillar to reduce your costs to a minimum and use those
 
 **Cost optimization in the cloud consists of 4 areas...**
 
-#### Matched supply and demand
+### Matched supply and demand
 
 Try to optimally align supply with demand. Dont over provision or under provision, instead as demand grows, so should your supply of compute resources. Think of things like Autoscaling which scale with demand.
 
@@ -355,7 +355,7 @@ Services such as CloudWatch can also help you keep track as to what your demand 
 - How do you make sure your capacity matches but does not substantially exceed what you need?
 - How are you optimizing your usage of AWS services?
 
-#### Cost-effective resources
+### Cost-effective resources
 
 Using the correct instance type can be key to cost savings. For example you might hvae a reporting process that is running on a t2-Micro and it takes 7 hours to complete. That same process could be run on a an m4.2xlarge in a manner of minutes. The result remains the same but the t2.micro is more expensive because it ran for longer.
 
@@ -367,7 +367,7 @@ A well architected system will use the most cost efficient resources to reach th
 - Have you selected the appropriate pricing model to meet your cost targets?
 - Are there managed services (higher level services that Amazon EC2, Amazon EBS) that you can use improve your ROI?
 
-#### Expenditure Awareness
+### Expenditure Awareness
 
 With cloud you no longer have to go out and get quotes on physical servers, choose a supplier, have those resources delivered, installed, made available etc. You can provision things within seconds, however this comes with its own issues.
 
@@ -382,7 +382,7 @@ You can use cost allocation tags to track this, billing alerts as well as consol
 - How do you decommission resources that you no longer need, or stop resources that are temporarily not needed?
 - How do you consider data-transfer charges when designing your architecture?
 
-#### Optimizing Over Time
+### Optimizing Over Time
 
 AWS moves FAST! There are hundreds of new services (and potentially 1000 new services this year). A service that you chose yesterday may not be the best service to be using today.
 
