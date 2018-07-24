@@ -1,6 +1,6 @@
 # Additional Exam Tips
 
-Based on student feedback from those who have already done the course
+## Based on Student Feedback...
 
 ### Kinesis
 
@@ -52,4 +52,53 @@ Based on student feedback from those who have already done the course
   - `curl http://169.254.169.254/latest/meta-data`
   - `wget http://169.254.169.254/latest/meta-data`
   - Key thing to remember is that its an instances META-DATA, not user data
-  
+
+
+## Consolidated Billing
+
+### AWS Organizations
+
+AWS Organizations is an account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage.
+
+Available in 2 feature sets
+  - Consolidated Billing
+  - All features
+
+**General Rules**
+
+- Paying account is independent
+- Cannot access resources of other accounts
+- All linked accounts are independent
+- Currently a limit of 20 linked accounts - can add more
+
+**Advantages**
+
+- One bill per AWS account
+- Very esy to track charges and allocate costs
+- Volume Pricing
+
+### Best Practices
+
+- Always enable MFA on root account
+- Always use a strong and complex password on root account
+- Paying account should be used for billing purposes only. Do not deploy resources in to paying account
+
+### Things to note
+
+- Billing Alerts
+  - When monitoring is enabled on the paying account the billing data for all linked accounts is included
+  - You can still create billing alerts per indvidual account
+
+- CloudTrail
+  - Per AWS Account and is enabled per region
+
+- Can consolidate logs using an S3 bucket
+  1. Turn on CloudTrail in the paying account
+  2. Create a bucket policy that allows cross account access
+  3. Turn on CloudTrail in the other accounts and use the bucket in the paying account
+
+### Tips
+
+- Consolidate billing allows you to get volume discounts on all your accounts.
+- Unused reserved instances for EC2 are applied across the group
+- CloudTrail is on a per account and per region basis but can be aggregated in to a single bucket in the paynig account.
