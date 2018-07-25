@@ -102,3 +102,11 @@ Available in 2 feature sets
 - Consolidate billing allows you to get volume discounts on all your accounts.
 - Unused reserved instances for EC2 are applied across the group
 - CloudTrail is on a per account and per region basis but can be aggregated in to a single bucket in the paynig account.
+
+## Cross Account Access
+
+Many AWS customers use separate AWS accounts for their development and production resources. This separation allows them to cleanly separate different types of resources and can also provide some security benefits.
+
+Cross account access makes it easier for you to work productively within a multi-account (or multi-role) AWS environment by making it easy for you to switch roles within the AWS Management Console.
+
+You can sign in to the console using you IAM user name then switch the console using your IAM user name then switch the console to manage another account without having to enter (or remember) another user name and password
