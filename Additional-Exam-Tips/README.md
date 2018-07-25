@@ -179,3 +179,85 @@ Available in:
 
 - Sub 1 Gbps can be purchased through AWS Direct Connect Partners
 - Uses Ethernet VLAN trunking (802.1Q)
+
+## STS - Security Token Service
+
+Grants users limited and temporary access to AWS resources. Users can come from 3 sources
+
+### Federation (typically Active Directory)
+
+- Uses Security Assertion Markup Language (SAML)
+- Grants temp access based off the users Active Directory credentials. Does not need to be a user in IAM
+- Single sign on allows users to log in to AWS console without assigning IAM credentials
+- Federation with mobile apps - Facebook/AWS/Google/OpenID providers
+- Cross Account Access - Access resources from one account to another
+
+### Key Terms
+
+- Federation
+    - Combining or joing a list of users in one domain (such as IAM) with a list of users in another domain (such as Active Directory, Facebook etc)
+- Identity Broker
+    - A service that allows you to take an identity from point A and join it (federate it) with point B
+- Identity Store
+    - Services like Active Directory, Facebook, Google etc
+- Identities
+    - A user of a service like Facebook etc.
+
+**SCENARIO!**
+
+```
+You are hosting a company website on some EC2 web servers in your VPC. Users of the website must log in to the site which authenticates against the companies active directory servers which are based on site at the companies head quarters
+
+Your VPC is connected to your company HQ via a secure IPSEC VPN. Once logged in the user can only have access to their own S3 bucket. How do you set this up?
+```
+
+**SOLUTION!**
+
+1. Users enter credentials (username and password)
+2. Application calls identity broker - broker captures username and passwords
+3. Broker checks with LDAP directory server - validates credentials
+4. Call to STS (security token service) - getFederationToken function using IAM credentials
+5. STS confirms policy and gives permisssion to create new tokens - returns 4 values
+    - Access Key
+    - Secret Access Key
+    - Token
+    - Duration (lifetime of token)
+6. 4 values are sent back to application via broker
+7. Application makes call to S3
+8. S3 uses IAM to validate credentials
+9. Credentials validated via IAM
+
+**In The Exam!**
+
+1. Develop and Identity Broker to communicate with LDAP and AWS STS.
+2. Identity Broker alway authenticates with LDAP first, THEN with AWS STS
+3. Application then gets temp access to AWS resources
+
+## Active Directory Tips
+
+### Exam Questions
+
+**QUESITON: _Can you authenticate with Active Directory?_**
+
+**ANSWER: Yes. Using SAML**
+
+**QUESITON: _In what order do you authenticate to get the security credentials to log into Active Directory?_**
+
+**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security crednetial.**
+
+## Workspaces
+
+It's basically a VDI (virtual development infrastructure). A Workspace is a cloud-based replacement for a traditional desktop.
+
+A Workspace is available as a bundle of compute resources, storage space, and software application access that allow a user to perform day-to-day tasks just like using a traditional desktop.
+
+A user can connect to a Workspace from any supported device (PC, Mac, Chromebook, iPad, KindleFire or Android Tablets) using free Amazon Workspaces client application and credentials set up by an administrator, or their existing Active Directory credentials if Amazon Workspaces is integrated with an existing Active Directory domain.
+
+### Quick Facts
+
+- Windows 7 experience, provided by Windows Server 2008 R2
+- By default, users can personalize their workspaces. This can be locked down by an admin however
+- By default, you will be given local admin access, so you can install your own applications
+- Workspaces are persistent
+- All data on the D:\ is backed up every 12 hours
+- You do not need an AWS account to login into workspaces
