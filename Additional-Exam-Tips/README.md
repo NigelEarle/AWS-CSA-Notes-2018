@@ -152,3 +152,30 @@ AWS uses the existing infrastructure of a VPC to create a VPC peering connection
 1. You cannot create a VPC peering connection between VPCs that have not matching or overlapping CIDR blocks ie. `10.0.0.0/16 -- X --> 10.0.0.0/24`
 2. You cannot create a VPC peering connection between VPCs in different regions
 3. VPC peering does not support transitive peering relationships.
+
+## Direct Connect
+
+AWS Direct Connect makes it easier to establish a dedicated network connection from your premises to AWS.
+
+Using AWS Direct Connect, you can establish private connectivity between AWS and your datacenter, office or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than internet-based connections.
+
+### Main Benefits
+
+- Reduce costs when using large volumes of traffic
+- Increase reliability
+- Increase bandwidth
+
+### How is Direct Connect different from a VPN?
+
+VPN Connections can be configured in minutes and are a good solution if you have and immediate need, have low to moderate bandwidth requirements, and can tolerate the inherent variability in Internet-based connectivity.
+
+AWS Direct Connect does not involve the Internet - instead, it uses dedicated, private network connections between your intranet and AWS VPC
+
+### Direct Connect Connections
+
+Available in:
+  - 10Gbs
+  - 1Gbbs
+
+- Sub 1 Gbps can be purchased through AWS Direct Connect Partners
+- Uses Ethernet VLAN trunking (802.1Q)
