@@ -110,3 +110,45 @@ Many AWS customers use separate AWS accounts for their development and productio
 Cross account access makes it easier for you to work productively within a multi-account (or multi-role) AWS environment by making it easy for you to switch roles within the AWS Management Console.
 
 You can sign in to the console using you IAM user name then switch the console using your IAM user name then switch the console to manage another account without having to enter (or remember) another user name and password
+
+## Resource Groups & Tags
+
+Key Value Pairs attached to AWS resources
+
+Metadata (data about data)
+
+Tags can sometimes be inherited
+
+- Autoscaling, CloudFormation and Elastic Beanstalk can create other resources
+
+Resource groups make it easy to groups your resources using the tags that are assigned to them. You can group that share one or more tags.
+
+**Note: Container for resources**
+
+Resource groups contain information such as:
+- Region 
+- Name
+- Health Checks
+
+Specific Information:
+- For EC2 - Public and Private IP Addresses
+- For ELB - Port Configurations
+- For RDS - Database Engine etc.
+
+## VPC Peering
+
+**Note: Generally not tested in Associate exams, only in Professional exams**
+
+### What is VPC Peering?
+
+VPC Peering is simply a connection bewtween 2 VPCs that enables you to route traffic between them using private IP addresses.
+
+Instances in either VPC can communicate with each other as if they are within the same network. You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account within a **SINGLE REGION**
+
+AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it is neither a gateway nor a VPN connection, and does not rely on separate piece of physical hardware. There is no single point of failure for communication or bandwidth bottleneck.
+
+### VPC Peering Limitations
+
+1. You cannot create a VPC peering connection between VPCs that have not matching or overlapping CIDR blocks ie. `10.0.0.0/16 -- X --> 10.0.0.0/24`
+2. You cannot create a VPC peering connection between VPCs in different regions
+3. VPC peering does not support transitive peering relationships.
