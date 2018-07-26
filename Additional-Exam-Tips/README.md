@@ -261,3 +261,88 @@ A user can connect to a Workspace from any supported device (PC, Mac, Chromebook
 - Workspaces are persistent
 - All data on the D:\ is backed up every 12 hours
 - You do not need an AWS account to login into workspaces
+
+## ECS
+
+- ECS is a regional service that you can use in one or more AZs across a new or existing, VPC to schedule the placement of containers across your cluster based on your resource needs, isolation policies, and availability requirements
+
+- ECS eliminates the need for you to operate your own cluster management and config management systems, or to worry about scaling your management infrastructure.
+
+- ECS can also be used to create a consistent deployment and build experience, manage and scale batch and ETL workloads, and build sophisticated application architectures on a microservice level.
+
+### ECR (Elastic Container Registery)
+
+- Managed AWS Docker registery service that is secure, scalable and reliable.
+- Supports private Docker repos with resource based permissions using AWS IAM so that specific users or EC2 instances can access repos and images.
+- Developers can use the Docker CLI to push, pull and manage images.
+
+### ECS Task Definitions
+
+- A Task Definition is required to run Docker containers in ECS.
+- Task Definitions are text files in JSON format that describe one or more containers that form your application.
+- Some of the params you can specify in a task defintion include:
+    - Which Docker images to yse with the containers in your task
+    - How much CPU and memory to use with each container
+    - Whether containers are linked together in a task
+- The Docker networking mode to use for the containers in your task
+- What (if any) ports from the container are mapped to the host container service
+- Whether the task should continue to run if the container finishes or fails
+- The command the container should run when it is started
+- What (if any) env variables should be passed to the container when it starts.
+- Any data volumes that should be used with containers in the task
+- What (if any) IAM role your tasks should use for permissions
+
+### ECS Services
+
+- An ECS service allows you to run and maintain a specified number (or, the "desired count") of instances of a task definition simultaneously in and ECS cluster
+- Think of services like AutoScaling groups for ECS
+- If a task should fail or stop, the ECS service scheduler launches another instance of your task definition to replace it and maintain the desired count of tasks in the service.
+  
+### ECS Clusters
+
+- An ECS cluster is a logical grouping of container instances that you can place tasks on.
+- When you first use the Amazon ECS service, a default cluster is created for you, but you can create multiple clusters in an account to keep your resources separate.
+- **Concepts:**
+    - Clusters can contain multiple different container instance types
+    - Clusters are region-specifc
+    - Container instances can only be part of one cluster at a time.
+    - You can create IAM policies for your clusters to allow or restrict users' access to specific clusters
+
+### ECS Scheduling
+
+- **Service Scheduler:**
+    - Ensures that the specific number of tasks are constantly running and reshedules tasks when a task fails (for example, if the underlying container instance fails for some reason)
+    - Can ensure tasks are registered against and ELB
+- **Custon Scheduler:**
+    - You can create your own schedulers that meet your business needs.
+    - Leverage 3rd party schedulers such as Blox
+- The  ECS schedulers leverage the same cluster state information provided by the ECS API to make appropriate placement decisions
+
+### ECS Container Agent
+
+ECS Container Agent allows container instances to connect to your cluster. ECS Container Agent is included in the ECS optimized AMI, but you can also install it on any EC2 instance that supports ECS specs. ECS Container Agent is only supported on EC2 instances.
+
+- Pre installed on special ECS AMIs
+- Linux based:
+    - Works with AWS Linux, Ubuntu, Redhat, CentOS, ets
+    - Will **not** work with Windows
+
+### ECS Security
+
+- IAM Roles:
+    - EC2 instances use an IAM role to access ECS
+    - ECS tasks use an IAM role to access services and resources
+- Security Groups attach at the instance-level (i.e. the host - not the task or container)
+- You can access and configure the OS of the EC2 instances in your ECS cluster
+
+### ECS Limits
+
+- Soft Limits:
+    - Clusters per Region (default = 100)
+    - Instances per Cluster (default = 100)
+    - Services per Cluster (default = 100)
+- Hard Limits:
+    - One Load Balancer per Service
+    - 1000 Tasks per Service ("desired")
+    - Max 10 Containers per Task Defintion
+    - Max 10 Tasks per Instance (host)
