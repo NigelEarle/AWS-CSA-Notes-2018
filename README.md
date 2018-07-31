@@ -35,7 +35,7 @@ _Details about this exam:_
 - Qualification is valid for 2 years
 - Scenario based questions
 
-Have a look at the Certified Solutions Architect - Associate [homepage]("https://aws.amazon.com/certification/certified-solutions-architect-associate/") to get an in-depth look at what to expect for your exam!
+Have a look at the Certified Solutions Architect - Associate [homepage](https://aws.amazon.com/certification/certified-solutions-architect-associate/) to get an in-depth look at what to expect for your exam!
 
 ----
 
