@@ -8,43 +8,32 @@ While planning out my study schedule, I felt it would be necessary to watch one 
 
 ## The Exam Blueprint
 
-As of 2018, you are now given the option taking either the **Standard Solutions Architect Associate Exam** or the **BETA Solutions Architect Associate Exam**! Let's have a look at the differences...
+AWS has recently released the updated/new version of the AWS Certified Solutions Architect - Associate exam (released February 2018). The old associate exam will no longer be available starting **August 12, 2018**.
 
-### Standard Exam
+Let's have a look at the details of the exam...
 
-The standard exam content coverage is spread across 4 domains.
-Will be retired soon. (exact date);
+### New Exam
 
-| Objective     | Weighting                                                         |
-| ------------- |:-----------------------------------------------------------------:|
-| Designing highly available, cost efficient, fault tolerant scalable systems | 60% |
-| Implementing / Deploying                                                    | 10% |
-| Data Security                                                               | 20% |
-| Troubleshooting                                                             | 10% |
+Easier. Will not get results for 3 months after completion. Across 5 different domains.
+
+| Objective     | Weighting                           |
+| ------------- |:-----------------------------------:|
+| Design Resilient Architectures                | 34% |
+| Define Performant Architectures                | 24% |
+| Specify Secure Applications and Architectures | 26% |
+| Design Cost-Optimized Architectures           | 10% |
+| Define Operationally-Excellent Architectures  | 6%  |
 
 _Details about this exam:_
 
-- 80 minutes in length
-- 60 questions
+- 130 minutes in length
+- 65 questions
 - $150 USD
 - Multiple choice
 - Pass mass based on bell curve
 - Aim for 70%
 - Qualification is valid for 2 years
 - Scenario based questions
-
-
-### Beta Exam
-
-Easier. Will not get results for 3 months afte completion. Across 5 different domains.
-
-| Objective     | Weighting                           |
-| ------------- |:-----------------------------------:|
-| Design Resilient Architectures                | 34% |
-| Define Perfomant Architectures                | 24% |
-| Specify Secure Applications and Architectures | 26% |
-| Design Cost-Optimized Architectures           | 10% |
-| Define Operationally-Excellent Architectures  | 6%  |
 
 ----
 
