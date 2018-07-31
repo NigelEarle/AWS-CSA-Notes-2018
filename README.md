@@ -14,7 +14,7 @@ Let's have a look at the details of the exam...
 
 ### New Exam
 
-Easier. Will not get results for 3 months after completion. Across 5 different domains.
+Generally easier than previous exam. Across 5 different domains.
 
 | Objective     | Weighting                           |
 | ------------- |:-----------------------------------:|
