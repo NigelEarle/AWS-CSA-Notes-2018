@@ -1,33 +1,35 @@
 # IAM - Identity Access Management
 
-## What is it?
+## What is IAM?
 
 Allow you to manage users and their level of access management to the AWS console. Tested for exam and co. aws account in real life. IAM is globally available and not specified to region
 
-## What does it give you?
-Centralized control of your AWS account
-Shared Access to your AWS account
-Granular permissions
-Identity federation
-    access to 3rd party service, Active Directory, Facebook, Linkedin
-Multifactor Authentication
-Provide temporary access for users/devices and services where necessary
-Set up and manage password rotation
-Integrates with many different AWS services
-supports PCI, DSS compliance
+## What can you do with IAM?
+
+- Centralized control of your AWS account
+- Shared Access to your AWS account
+- Granular permissions
+- Identity Federation
+    - Access to 3rd party service, Active Directory, Facebook, Linkedin
+- Multifactor Authentication (MFA)
+- Provide temporary access for users/devices and services where necessary
+- Set up and manage password rotation
+- Integrates with many different AWS services
+- Supports PCI, DSS compliance
 
 ## Terminology
 
 - **Users** - End users (people)
 - **Groups** - Collection of users under one set of permissions
-- **Roles** - Will Update, create roles and assign them to services grant roles to entities that you trust
-- **Policies** - Document that defines one or more permissions - JSON format
+- **Roles** - Permissions defined for AWS resources (i.e. EC2 etc.)
+- **Policy Documents** - Document that defines one or more permissions - JSON format
 - **Root account** - user used to sign into AWS account
 
 ## General Notes
 
+- Universal. Does not apply to regions at this time.
 - Attach permissions to users as well as groups
-- No users have permissions when first created
+- New users have NO permissions when first created
 - New users are assigned and Access Key ID and Secret Key when first created
     - Keys are not the same as passwords
     - Must regenerate keys if lost
