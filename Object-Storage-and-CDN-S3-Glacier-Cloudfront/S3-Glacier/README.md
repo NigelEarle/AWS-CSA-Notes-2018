@@ -19,10 +19,10 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 
 ## S3 Object - Key, Value Store
 
-- Key -> Name of object to be stored
-- Value -> Data being stored - made up of a sequence of bytes
-- Version ID -> Version signifier
-- Metadata -> Data about the data you are storing - date stored, size, 
+- Key - Name of object to be stored
+- Value - Data being stored - made up of a sequence of bytes
+- Version ID - Version signifier
+- Metadata - Data about the data you are storing - date stored, size, 
 - Subresource
     - Access Control Lists
     - Torrents
@@ -86,10 +86,10 @@ S3 buckets can be configured to create access logs which log all requests made t
 
 **4** different methods and **2** types of encryption for S3 buckets.
 
-- **In Transit** - from client uploading to S3 bucket.
+1. **In Transit** - from client uploading to S3 bucket.
 	- Using SSL/TLS encryption. HTTPS
 
-- **At Rest**
+2. **At Rest**
 	- Server Side Encryption
 		- **SSE-S3** - S3 Managed key. Each object is encrypted with a unique key employing strong multi-factor encryption with rotating master key (AES-256 encryption).
 		- **SSE KMS** - AWS Key Management Service, Managed Keys. Similar to SSE-S3. Separate permissions for envelope key - key that protects data encryption key. Audit trail - when keys were used and who were using.
