@@ -97,3 +97,10 @@ S3 buckets can be configured to create access logs which log all requests made t
 	- Client Side Encryption
 		- Encrypt data on client side and upload to S3
 
+## Links
+
+- [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
+- [https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html)
+- [https://aws.amazon.com/s3/faqs/](https://aws.amazon.com/s3/faqs/)
+- [https://aws.amazon.com/s3/storage-classes/](https://aws.amazon.com/s3/storage-classes/)
+- [https://aws.amazon.com/glacier/faqs/](https://aws.amazon.com/glacier/faqs/)
