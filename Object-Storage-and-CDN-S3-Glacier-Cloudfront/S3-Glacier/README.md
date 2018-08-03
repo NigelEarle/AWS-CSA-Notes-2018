@@ -7,7 +7,7 @@ It is capable of unlimited storage. All files are stored into 'Buckets' which is
 
 S3 uses a universal namespace meaning all names must be **_globally_** unique.
 
-Example S3 URL:
+_Example S3 URL:_
 
 **`https://s3-eu-west-1.amazonaws.com/[bucket-name]`**
 
@@ -31,20 +31,20 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 
 - Built for 99.99% availability for the S3 platform
 - Amazon guarantee 99.9% availability - always available
-- Amazon guarantees 99.99999999999% (11 9’s) durability for S3 info
+- Amazon guarantees 99.99999999999% (11, 9’s) durability for S3 information
 - Tiered storage
 - Lifecycle management
 - Versioning
 - Encryption
-- Secure data using access control lists bucket policies
+- Secure data using Access Control Lists bucket policies
 
-### Storage Tiers 
+### Storage Tiers
 
 - **S3 (Normal)**
 	- 99.99% availability, 99.(11 9’s )
 	- durable, reliable - stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilities concurrently
 
-- **S3 IA (infrequent access)**
+- **S3 IA (Infrequent Access)**
 	- Used for data that is accessed less frequently but requires rapid access when needed
 	- Lower fee than S3 but, are charged a retrieval fee
 
@@ -67,12 +67,16 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 #### Transfer Acceleration
 
 - Enables fast, easy and secure transfers of files over long distances between you and your end users and an S3 bucket.
-- Takes advantage of AWS Cloudfront global, distributed edge locations.
+- Takes advantage of AWS CloudFront global, distributed edge locations.
 - When data arrives at an edge location, it is then routed to Amazon S3 over an optimized network path.
 
 ## S3 Encrytion and Security
 
-By default all newly created buckets are PRIVATE. You need to manually change permissions to access resources. You can set policies and permissions using either Access Control Lists or Bucket Policies. You have the ability to make a bucket private but all certian objects in that bucket to be public.
+By default all newly created buckets are **PRIVATE**. You need to manually change permissions to access resources.
+
+You can set policies and permissions using either Access Control Lists or Bucket Policies. 
+
+You have the ability to make a bucket private but all certian objects in that bucket to be public.
 
 ### Logging
 
@@ -82,10 +86,10 @@ S3 buckets can be configured to create access logs which log all requests made t
 
 **4** different methods and **2** types of encryption for S3 buckets.
 
-- In transit - from client uploading to S3 bucket.
+- **In Transit** - from client uploading to S3 bucket.
 	- Using SSL/TLS encryption. HTTPS
 
-- At Rest
+- **At Rest**
 	- Server Side Encryption
 		- **SSE-S3** - S3 Managed key. Each object is encrypted with a unique key employing strong multi-factor encryption with rotating master key (AES-256 encryption).
 		- **SSE KMS** - AWS Key Management Service, Managed Keys. Similar to SSE-S3. Separate permissions for envelope key - key that protects data encryption key. Audit trail - when keys were used and who were using.
