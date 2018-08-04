@@ -19,3 +19,8 @@ CloudFront is optimized to work with other Amazon Web Services like S3, EC2, Ela
 - **Distribution** - Given name of CDN which consists of a collection of Edge Locations
 - **Web Distribution** - Typically used for websites
 - **RTMP (Real Time Message Protocol)** - Used for media streaming
+
+## Links
+
+- [https://aws.amazon.com/cloudfront/](https://aws.amazon.com/cloudfront/)
+- [https://aws.amazon.com/cloudfront/details/](https://aws.amazon.com/cloudfront/details/)
