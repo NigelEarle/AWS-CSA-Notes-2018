@@ -36,3 +36,8 @@ Allow you to manage users and their level of access management to the AWS consol
 - ALWAYS setup multifactor auth on root account
 - Customize password rotation policies
 - Unable to set billing alarm in cloud watch because of new account
+
+## Links
+
+- [https://aws.amazon.com/iam/faqs/](https://aws.amazon.com/iam/faqs/)
+- [https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
