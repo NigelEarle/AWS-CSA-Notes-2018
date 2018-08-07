@@ -55,6 +55,7 @@
 - Versioning MFA Delete capability, uses mulit-factor authentication, can be used to provide an additional layer of security
 
 ### Cross Region Replication
+
 - Versioning must be enabled on source and destination buckets
 - Regions must be unique, Cannot cross region to same region
 - Files are not replicated automatically. All subsequent updated files will be replicated automatically.

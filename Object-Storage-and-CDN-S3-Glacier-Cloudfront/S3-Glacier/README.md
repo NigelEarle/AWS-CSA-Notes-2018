@@ -58,6 +58,7 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
     - Optimized for data that is infrequently accessed and for which retrieval times of 3 to 5 hours are suitable (slow retrieval).
 
 ### S3 Charges
+
 - Storage
 - Requests
 - Storage Management Pricing
