@@ -13,7 +13,7 @@ Allows you to pay a fixed rate by the hour (or by the second) with no commitment
 **_Use Cases_**
 
 - Perfect for users that want the low cost and flexibility of EC2 without any of the up front payment or long term commitment
-- Applications with short term, spiky or unpredictable workloads that cannot be interrupted
+- Applications with short term, spikey or unpredictable workloads that cannot be interrupted
 - Applications being developed or tested on EC2 for the first time
 
 ### Reserved
@@ -24,7 +24,7 @@ Provides you with a capacity reservation, and offer a significant discount on th
 
 - Applications with steady state or predictable usage
 - Applications that require reserved capacity
-- Users can make up front payments to reduce their totoal computing costs even further
+- Users can make up front payments to reduce their total computing costs even further
   - Standard RIs (Up to 75% off on-demand)
   - Convertible RIs (Up to 54% off on-demand) feature the capability to change the attributes of the RI as long as the exchange results in the creation of Reserved Instances of equal or greater value. Ability to go from CPU intensive instance to Memory intensive.
   - Scheduled RIs are available to launch within the time window you reserve. This option allows you to match your capacity reservation to predictable recurring schedule that only requires a fraction of a day, a week, or a month.
@@ -42,7 +42,7 @@ Enables you to bid whatever price you want for an instance capacity, providing f
 
 ### Dedicated Hosts
 
-Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing yout to use your existing server-bound software licenses.
+Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licenses.
 
 **Use Cases**
 
@@ -85,7 +85,7 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 
 ## EBS - Elastic Block Storage
 
-Amazon EBS allows you to create storage volumes and attch them Amazon EC2 instances. Once attached, you can create a file system on top of theses volumes, run a database, or use them in any other way you would use a block device. EBS volumes are placed in a specific Availibility Zone, where they are automatically replicated to protect you from the failure of a single component.
+Amazon EBS allows you to create storage volumes and attach them Amazon EC2 instances. Once attached, you can create a file system on top of theses volumes, run a database, or use them in any other way you would use a block device. EBS volumes are placed in a specific Availibility Zone, where they are automatically replicated to protect you from the failure of a single component.
 
 _TLDR; A disk in the cloud that you attach to your EC2 instances_
 
@@ -98,7 +98,7 @@ _TLDR; A disk in the cloud that you attach to your EC2 instances_
   - Designed for I/O intensive applications such as large relational or NoSQL databases.
   - Use if you need more than 10,000 IOPS
   - Provision up to 20,000 IOPS per volume
-  - Super high performant
+  - Super high performance
 - Throughput Optimized HDD (ST1)
   - Big Data
   - Data warehouses
@@ -115,7 +115,7 @@ _TLDR; A disk in the cloud that you attach to your EC2 instances_
 
 ### Summary
 
-- Termination protection is turned off by default, you _MUST_ turn it on.
+- Termination protection is turned off by default, you **MUST** turn it on.
 - On an EBS-backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated
 - EBS Root Volume of you DEFAULT AMI's cannot be encrypted. You can also use a third party tool (such as bit locker) to encrypt the root volume, or this can be done when creating AMI's (future lab) in the AWS console or using the API.
 - Additional volumes can be encrypted.
