@@ -101,7 +101,7 @@ Available in 2 feature sets
 
 - Consolidate billing allows you to get volume discounts on all your accounts.
 - Unused reserved instances for EC2 are applied across the group
-- CloudTrail is on a per account and per region basis but can be aggregated in to a single bucket in the paynig account.
+- CloudTrail is on a per account and per region basis but can be aggregated in to a single bucket in the paying account.
 
 ## Cross Account Access
 
@@ -243,7 +243,7 @@ Your VPC is connected to your company HQ via a secure IPSEC VPN. Once logged in 
 
 **QUESITON: _In what order do you authenticate to get the security credentials to log into Active Directory?_**
 
-**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security crednetial.**
+**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security credentials.**
 
 ## Workspaces
 
