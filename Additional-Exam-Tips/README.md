@@ -149,7 +149,7 @@ AWS uses the existing infrastructure of a VPC to create a VPC peering connection
 
 ### VPC Peering Limitations
 
-1. You cannot create a VPC peering connection between VPCs that have not matching or overlapping CIDR blocks ie. `10.0.0.0/16 -- X --> 10.0.0.0/24`
+1. You cannot create a VPC peering connection between VPCs that have overlapping CIDR blocks ie. `10.0.0.0/16 -- X --> 10.0.0.0/24`
 2. You cannot create a VPC peering connection between VPCs in different regions
 3. VPC peering does not support transitive peering relationships.
 
