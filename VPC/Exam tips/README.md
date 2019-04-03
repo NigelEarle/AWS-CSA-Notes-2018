@@ -5,7 +5,7 @@
 - Think of a VPC as a logical data center in AWS
 - Consists of IGW(or Virtual Private Gateways), route tables, network access control lists (NACL), subnets, security groups
 - 1 subnet = 1 AZ
-- Security groups are Statful; NACLs are Stateless
+- Security groups are Stateful; NACLs are Stateless
   - Must open both inbound and outbound ports for NACLs
 - NO TRANSITIVE PEERING!!
 - Allowed 5 VPC's in each AWS Region by default
@@ -14,7 +14,7 @@
 
 - You cannot enable flow logs for VPCs that are peered with your VPC unless the peer VPC is in your account.
 - Cannot tag a flow log
-- After you've created a flow log, you cannot change its configuration; for example, you cant associate a differenct IAM role with the flow log
+- After you've created a flow log, you cannot change its configuration; for example, you cant associate a different IAM role with the flow log
 
 **Not all IP traffic is monitored**
 

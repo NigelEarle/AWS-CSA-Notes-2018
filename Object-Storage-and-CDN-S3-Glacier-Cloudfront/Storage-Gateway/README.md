@@ -38,9 +38,9 @@ This data is asynchronously backed up to S3 in the form of AWS EBS (Elastic Bloc
 
 #### Cached Volumes
 
-Cached volumes let you use S3 as your primary data storage while retaing frequently accessed data locally in your storage gateway.
+Cached volumes let you use S3 as your primary data storage while retaining frequently accessed data locally in your storage gateway.
 
-Cached volumes minimize the need to scale your on-premise storage infrastucture, while still providing your applications with low-latency access to their frequently accessed data.
+Cached volumes minimize the need to scale your on-premise storage infrastructure, while still providing your applications with low-latency access to their frequently accessed data.
 
 You can create storage volumes up to 32Tb in size and attach to them as iSCSI devices from your on-premises application servers. Your gateway stores data that you write to these volumes in S3 and retains recently read data in your on-premises storage gateways cache and upload buffer storage. 1 GB - 32 TB size for cached volumes.
 
@@ -50,7 +50,7 @@ You can create storage volumes up to 32Tb in size and attach to them as iSCSI de
 
 Offers a durable, cost-effective solution to archive your data in AWS cloud. The VTL interface it provides lets you leverage your existing tape-based backup application infrastructure to store data on virtual tape cartridges that you create on your tape gateway.
 
-Each tape gateway is preconfigured with a media changer and tape drivers, which are available to your existing client backup applciations as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by Netbackup, Backup Exec, Veeam etc.
+Each tape gateway is preconfigured with a media changer and tape drivers, which are available to your existing client backup applications as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by Netbackup, Backup Exec, Veeam etc.
 
 ## Tips (Summary)
 

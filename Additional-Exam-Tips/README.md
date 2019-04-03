@@ -87,7 +87,7 @@ Available in 2 feature sets
 
 - Billing Alerts
   - When monitoring is enabled on the paying account the billing data for all linked accounts is included
-  - You can still create billing alerts per indvidual account
+  - You can still create billing alerts per individual account
 
 - CloudTrail
   - Per AWS Account and is enabled per region
@@ -101,7 +101,7 @@ Available in 2 feature sets
 
 - Consolidate billing allows you to get volume discounts on all your accounts.
 - Unused reserved instances for EC2 are applied across the group
-- CloudTrail is on a per account and per region basis but can be aggregated in to a single bucket in the paynig account.
+- CloudTrail is on a per account and per region basis but can be aggregated in to a single bucket in the paying account.
 
 ## Cross Account Access
 
@@ -141,7 +141,7 @@ Specific Information:
 
 ### What is VPC Peering?
 
-VPC Peering is simply a connection bewtween 2 VPCs that enables you to route traffic between them using private IP addresses.
+VPC Peering is simply a connection between 2 VPCs that enables you to route traffic between them using private IP addresses.
 
 Instances in either VPC can communicate with each other as if they are within the same network. You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account within a **SINGLE REGION**
 
@@ -195,7 +195,7 @@ Grants users limited and temporary access to AWS resources. Users can come from 
 ### Key Terms
 
 - Federation
-    - Combining or joing a list of users in one domain (such as IAM) with a list of users in another domain (such as Active Directory, Facebook etc)
+    - Combining or joining a list of users in one domain (such as IAM) with a list of users in another domain (such as Active Directory, Facebook etc)
 - Identity Broker
     - A service that allows you to take an identity from point A and join it (federate it) with point B
 - Identity Store
@@ -217,7 +217,7 @@ Your VPC is connected to your company HQ via a secure IPSEC VPN. Once logged in 
 2. Application calls identity broker - broker captures username and passwords
 3. Broker checks with LDAP directory server - validates credentials
 4. Call to STS (security token service) - getFederationToken function using IAM credentials
-5. STS confirms policy and gives permisssion to create new tokens - returns 4 values
+5. STS confirms policy and gives permission to create new tokens - returns 4 values
     - Access Key
     - Secret Access Key
     - Token
@@ -243,7 +243,7 @@ Your VPC is connected to your company HQ via a secure IPSEC VPN. Once logged in 
 
 **QUESITON: _In what order do you authenticate to get the security credentials to log into Active Directory?_**
 
-**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security crednetial.**
+**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security credential.**
 
 ## Workspaces
 
@@ -280,7 +280,7 @@ A user can connect to a Workspace from any supported device (PC, Mac, Chromebook
 
 - A Task Definition is required to run Docker containers in ECS.
 - Task Definitions are text files in JSON format that describe one or more containers that form your application.
-- Some of the params you can specify in a task defintion include:
+- Some of the params you can specify in a task definition include:
     - Which Docker images to yse with the containers in your task
     - How much CPU and memory to use with each container
     - Whether containers are linked together in a task
@@ -311,7 +311,7 @@ A user can connect to a Workspace from any supported device (PC, Mac, Chromebook
 ### ECS Scheduling
 
 - **Service Scheduler:**
-    - Ensures that the specific number of tasks are constantly running and reshedules tasks when a task fails (for example, if the underlying container instance fails for some reason)
+    - Ensures that the specific number of tasks are constantly running and reschedules tasks when a task fails (for example, if the underlying container instance fails for some reason)
     - Can ensure tasks are registered against and ELB
 - **Custon Scheduler:**
     - You can create your own schedulers that meet your business needs.
@@ -324,7 +324,7 @@ ECS Container Agent allows container instances to connect to your cluster. ECS C
 
 - Pre installed on special ECS AMIs
 - Linux based:
-    - Works with AWS Linux, Ubuntu, Redhat, CentOS, ets
+    - Works with AWS Linux, Ubuntu, Redhat, CentOS, etc.
     - Will **not** work with Windows
 
 ### ECS Security
@@ -344,5 +344,5 @@ ECS Container Agent allows container instances to connect to your cluster. ECS C
 - Hard Limits:
     - One Load Balancer per Service
     - 1000 Tasks per Service ("desired")
-    - Max 10 Containers per Task Defintion
+    - Max 10 Containers per Task Definition
     - Max 10 Tasks per Instance (host)

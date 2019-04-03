@@ -16,7 +16,7 @@ Any component of a distributed application can store messages in the queue. Mess
 
 ### What do you mean by "Queue"?
 
-The queue acts as a buffer between the component producing and saving data, and the component receiving the data for processing. This means the queue resolves issues that arise if the producer is producing faster than the consumer can process it, of if the producer or consumer are only intermittenly connected to the network.
+The queue acts as a buffer between the component producing and saving data, and the component receiving the data for processing. This means the queue resolves issues that arise if the producer is producing faster than the consumer can process it, of if the producer or consumer are only intermittently connected to the network.
 
 ### Queue Types
 
@@ -106,11 +106,11 @@ _JSON Domain Registration Example_
 
 ## SNS - Simple Notification Service
 
-SNS is a web service that makes it easy to set up, operate and send notifications from the cloud. It provides developers with a highly scalable, flexible and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or ther applications
+SNS is a web service that makes it easy to set up, operate and send notifications from the cloud. It provides developers with a highly scalable, flexible and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or their applications
 
 May push notifications to Apple, Google, Fire OS and Windows devices as well as Android devices in China with Baidu Cloud Push.
 
-Besides pushing cloud notifications directly to mobile devices, SNS can also deliver notifications by SMS text message or emai, to SQS queues, or to any HTTP endpoint.
+Besides pushing cloud notifications directly to mobile devices, SNS can also deliver notifications by SMS text message or email, to SQS queues, or to any HTTP endpoint.
 
 SNS notifications can also trigger Lambda functions. When a messge is published to and SNS topic that has a Lambda function subscribed to it, the Lambda function is invoked with the payload of the published message. The Lambda function receives the message payload as an input parameter and can manipulate the information in the message, publish the message to other SNS topics, or send the message to other AWS services.
 
@@ -157,7 +157,7 @@ To prevent messages from being lost, all messages published to SNS are stored re
 
 - Media Transcoder in the cloud.
 - Convert media files from their original source format in to different formats that will play on smarphones, tablets, PCs etc.
-- Provides transcoding presets for popular output formats, which means that you dont need to guess about which settings work bets on particular devices.
+- Provides transcoding presets for popular output formats, which means that you don't need to guess about which settings work bets on particular devices.
 - Pay based on the minutes that you transcode and the resolution at which you transcode.
 
 ## API Gateway

@@ -10,7 +10,7 @@ Allow you to manage users and their level of access management to the AWS consol
 - Shared Access to your AWS account
 - Granular permissions
 - Identity Federation
-    - Access to 3rd party service, Active Directory, Facebook, Linkedin
+    - Access to 3rd party service, Active Directory, Facebook, LinkedIn
 - Multifactor Authentication (MFA)
 - Provide temporary access for users/devices and services where necessary
 - Set up and manage password rotation

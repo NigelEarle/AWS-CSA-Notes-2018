@@ -48,7 +48,7 @@
 
 ### Versioning
 
-- Stores all version of an object (all writes/udpates and even if you delete the object). Must manually delete object if you wish to delete a version
+- Stores all version of an object (all writes/updates and even if you delete the object). Must manually delete object if you wish to delete a version
 - Great back up tool
 - Once enabled, cannot be disabled, only suspended
 - Integrates with Lifecycle rules
@@ -78,7 +78,7 @@
 
 - Edge Location - Location where content will be cached - separate from AWS Region
 - Origin - Origin of all files the the CDN will distribute. Can be S3, EC2, Elastic Load Balancer, Route 53 or your own custom server.
-- Distribution - Name given to the CDN which consistsof a collection of Edge Locations
+- Distribution - Name given to the CDN which consists of a collection of Edge Locations
 	- Web Distribution - Typically used for websites
 	- RTMP - Used for media streaming
 - Edge Locations are not just for READ only, you can write (PUT) too!
@@ -89,7 +89,7 @@
 
 - File Gateway - For flat files, stored directly on S3.
 - Volume Gateway:
-  - Stored Volumes - Entire dataset is stored on site and is asynchronously backedup to S3
+  - Stored Volumes - Entire dataset is stored on site and is asynchronously backed up to S3
   - Cached Volumes - Entire dataset is stored on S3 and the most frequent accessed data is cached on site.
 - Gateway Virtual Tape Library
   - Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veeam etc.

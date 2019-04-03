@@ -2,17 +2,17 @@
 
 ## EC2 Instance Run Down
 
-- **On Demand** - allows you to pay a fixed rate by the hour (or second) with not commitement
+- **On Demand** - allows you to pay a fixed rate by the hour (or second) with not commitment
 
 - **Reserved** - provides you with the capacity reservation, and offer a significant discount on the hourly charge for an instance. 1 year or 3 year terms
 
-- **Spot** - Enables you to bid whatever price you want for instane capacity, providing for even greater savings if your applications have flexible start and end times
+- **Spot** - Enables you to bid whatever price you want for instant capacity, providing for even greater savings if your applications have flexible start and end times
 
 - **Dedicated Hosts** - Physical EC2 server dedicated for your use. Dedicated Hosts can help reduce costs by allowing you to use your existing server-bound software license
 
 **_Important Note!!_**
 
-If a Spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage. However, if you terminatethe instance yourself, you will be charged for the complete hour in which the instance ran.
+If a Spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage. However, if you terminate the instance yourself, you will be charged for the complete hour in which the instance ran.
 
 ## Instance Types
 
@@ -25,7 +25,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 - **R.** - Ram
 - **M.** - Main choice for general purpose applications
 - **C.** - Compute
-- **P.** - Grahics(Pics)
+- **P.** - Graphics(Pics)
 - **X.** - Extreme Memory
 
 ## Volume Types
@@ -52,7 +52,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
   - Virtual Hard Disk
 - Snapshots exist on S3
 - Snapshots are a point in time copies of Volumes
-- Snapshots are incremental - this means that only the blocks that have chnaged since your last snapshot are moved to S3. Only recording the changes
+- Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3. Only recording the changes
 - If it's 1st snapshot, takes time to create
 
 ### Snapshots of Root Device Volumes
@@ -88,7 +88,7 @@ If a Spot instance is terminated by Amazon EC2, you will not be charged for a pa
 
 
 - 504 Error means the gateway has timed out. Application is not responding within the idle timeout period
-  - Trouble shoot the applcation. Web Server or Database Server?
+  - Trouble shoot the application. Web Server or Database Server?
 
 
 - If you need IPv4 address of your end user, look fro the X-Forwarded-For header.
@@ -108,16 +108,16 @@ _Note: ELB's do not have IP Addresses, only found by DNS namespace_
 
 - **Dashboards** - Creates awesome dashboards to see/monitor what is happening with your AWS environment.
 - **Alarms** - Allows you to set Alarms that notify you when a particular thresholds are hit.
-- **Events** - Helps you to repsond to state changes in your AWS resources.
+- **Events** - Helps you to respond to state changes in your AWS resources.
 - **Logs** - Helps you to aggregate, monitor and store logs.
 
 ## Placement Groups
 
-- A Clustered Placement Group can not span multiple Availibitity Zones.
+- A Clustered Placement Group can not span multiple Availability Zones.
 - A Spread Placement Group can.
 - The name you specify for a placement group must be unique within your aws account.
 - Only certain types of instances can be launched in a placement group (Compute Optimized, GPU, Memory Optimized, Storage Optimized)
-- AWS recommend homogenous instances within placement groups.
+- AWS recommend homogeneous instances within placement groups.
 - You cant merge placement groups
 - You cant move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.
 
@@ -126,11 +126,11 @@ _Note: ELB's do not have IP Addresses, only found by DNS namespace_
 - Lambda scales horizontally (not vertically) automatically. Redundancy
 - Lambda functions are independent, 1 event = 1 function
 - Lambda is serverless
-- Know what services are serverless!!
+- Know what services are serverless!
   - S3
   - API Gateway
   - DynamoDB
-- Lambda funcitons can trigger other lambda functions, 1 event can = x functions if functions trigger other functions.
+- Lambda functions can trigger other lambda functions, 1 event can = x functions if functions trigger other functions.
 - Architectures can get extremely complicated, AWS X-ray allows you to debug what is happening
 - Lambda can do things globally, you can use it to back up S3 buckets to other S3 buckets etc.
 - Know your triggers - connecting AWS services
@@ -162,7 +162,7 @@ _Note: ELB's do not have IP Addresses, only found by DNS namespace_
 - HDD, Cold - SC1 - Less frequently accessed data
 - HDD, Magnetic - Standard - Cheap, Infrequently accessed storage.
 
-**IMPORTANT NOTE:** You cannot mount 1 EBS volume to mulitple EC2 instances; Instead use EFS (Elastic File Storage)
+**IMPORTANT NOTE:** You cannot mount 1 EBS volume to multiple EC2 instances; Instead use EFS (Elastic File Storage)
 
 ### Lab Tips! 
 

@@ -1,8 +1,8 @@
 # EC2 (Elastic Cloud Compute)
 
-AWS EC2 is a web service that provides resizable compute capacity in the cloud. EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
+AWS EC2 is a web service that provides re-sizable compute capacity in the cloud. EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
 
-EC2 has changed the economics of cloud computing by allowing you to pay only for capacity that your actually use. EC2 provides developers the tools to build failure resistent applications and isolate themselves from common failure scenarios.
+EC2 has changed the economics of cloud computing by allowing you to pay only for capacity that your actually use. EC2 provides developers the tools to build failure resistant applications and isolate themselves from common failure scenarios.
 
 ## Pricing Options
 
@@ -13,7 +13,7 @@ Allows you to pay a fixed rate by the hour (or by the second) with no commitment
 **_Use Cases_**
 
 - Perfect for users that want the low cost and flexibility of EC2 without any of the up front payment or long term commitment
-- Applications with short term, spikey or unpredictable workloads that cannot be interrupted
+- Applications with short term, spiky or unpredictable workloads that cannot be interrupted
 - Applications being developed or tested on EC2 for the first time
 
 ### Reserved
@@ -46,7 +46,7 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
 
 **Use Cases**
 
-- Useful for regulatory requirements that may not support multi-tenant vitualization.
+- Useful for regulatory requirements that may not support multi-tenant virtualization.
 - Great for licensing which does not support multi-tenancy or cloud deployments
 - Can be purchased On-Demand (hourly).
 - Can be purchased as a Reservation for up to 70% off the On-Demand price.
@@ -80,12 +80,12 @@ Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce 
   - **_R_** - Ram
   - **_M_** - Main choice for general purpose applications
   - **_C_** - Compute
-  - **_P_** - Grahics(Pics)
+  - **_P_** - Graphics(Pics)
   - **_X_** - Extreme Memory
 
 ## EBS - Elastic Block Storage
 
-Amazon EBS allows you to create storage volumes and attach them Amazon EC2 instances. Once attached, you can create a file system on top of theses volumes, run a database, or use them in any other way you would use a block device. EBS volumes are placed in a specific Availibility Zone, where they are automatically replicated to protect you from the failure of a single component.
+Amazon EBS allows you to create storage volumes and attach them Amazon EC2 instances. Once attached, you can create a file system on top of theses volumes, run a database, or use them in any other way you would use a block device. EBS volumes are placed in a specific Availability Zone, where they are automatically replicated to protect you from the failure of a single component.
 
 _TLDR; A disk in the cloud that you attach to your EC2 instances_
 
@@ -139,7 +139,7 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 
 ## RAID, Volumes & Snapshots
 
-### RAID - Redundant Array of Indenpendent Disks
+### RAID - Redundant Array of Independent Disks
 
 - RAID 0 - Striped, no redundancy, good performance. If one fails, you lose all
 - RAID 1 - Mirrored, redundant. If one fails, others available
@@ -169,7 +169,7 @@ A security group is a virtual firewall that's controlling traffic to your EC2 in
 - Snapshots of encrypted volumes are encrypted automatically
 - Volumes restored from encrypted snapshots are encrypted automatically.
 - You can share snapshots, but only if they are unencrypted.
-  - Said snapshots can be shared with other AWS accoutns of made public
+  - Said snapshots can be shared with other AWS accounts of made public
 
 ## AMI Types
 
@@ -231,7 +231,7 @@ Used to load balance HTTP(S) applications and use Layer 7-specific features, suc
 
 **Clustered Placement Group**
 
-A cluster placement group is a grouping of instances within a **single** Availibility Zone. Placement groups are recommended for applications that need low network latency, high network throughput, or both.
+A cluster placement group is a grouping of instances within a **single** Availability Zone. Placement groups are recommended for applications that need low network latency, high network throughput, or both.
 
 _NOTE: Only a certain number instances can be launched in to a Clustered Placement Group._
 
@@ -284,7 +284,7 @@ AWS Lambda is a compute service where you can upload your code and create Lambda
 ### How is Lambda priced?
 
 - Number of requests
-  - First 1m requets are free. $0.20 per 1m requests thereafter.
+  - First 1m requests are free. $0.20 per 1m requests thereafter.
 
 - Duration
   - Duration is calculated from the time your code begins execution until it returns or otherwise terminates, rounded up to the nearest 100ms. The price depends on the amount of memory you allocate to your function. You are charged $0.00001667 for every GB-second used.

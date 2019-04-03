@@ -96,7 +96,7 @@ This has been developed by the Solutions Architecture team based on their experi
 ### Design Principles
 
 - Apply security at all layers!
-- Enable tracibility
+- Enable traceability
 - Automate responses to security events
 - Focus on securing your system
 - Automate security best practices
@@ -109,7 +109,7 @@ Security in the cloud consists of 4 areas...
 
 Before you begin to architect security practices across your environment, **basic data classification should be in place**. You should organize and classify your data in to segments such as publicly available, available to only members of your organization, available to only certain members of your organization, available only to the board etc.
 
-You should also implement a least privilege access system so that people are only able to access what they need. However most importantly, you should encrypt everthing where possible, whether it be at rest or in transit.
+You should also implement a least privilege access system so that people are only able to access what they need. However most importantly, you should encrypt everything where possible, whether it be at rest or in transit.
 
 **In AWS the following practices help to protect your data...**
 
@@ -138,8 +138,8 @@ Privilege Management ensures that only authorized and authenticated users are ab
 **What questions should you be asking yourself?**
 
 - How are you protecting access to and use the AWS root account credentials?
-- How are you defining roles and responsibilites of system users to control human access to the AWS Management Console and APIs?
-- How are you limiting automated access (such as frmo applications, scripts, or 3rd party tools or services) to AWS resources?
+- How are you defining roles and responsibilities of system users to control human access to the AWS Management Console and APIs?
+- How are you limiting automated access (such as from applications, scripts, or 3rd party tools or services) to AWS resources?
 - How are you managing keys and credentials?
 
 ### Infrastructure Protection
@@ -179,7 +179,7 @@ You can use detective controls to detect or identify a security breach. AWS Serv
 
 ## Pillar 2 - Reliability
 
-The reliability pillar covers the ability of a system to recover from service or infrastructure outages/discruptions as well as the ability to dynamically acquire computing resources to meet demand.
+The reliability pillar covers the ability of a system to recover from service or infrastructure outages/disruptions as well as the ability to dynamically acquire computing resources to meet demand.
 
 - Test recovery procedures
 - Automatically recover from failure - Netflix SimianArmy
@@ -190,7 +190,7 @@ The reliability pillar covers the ability of a system to recover from service or
 
 Reliability in the cloud consists of 3 areas...
 
-1. Foudations
+1. Foundations
 2. Change Management
 3. Failure Management
 
@@ -208,7 +208,7 @@ https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html
 
 ### Change Management
 
-You need to be aware of how change affects a system so that you can plan procatively around it. Monitoring allows you to detect any changes to your environment and react. In traditional systems, change control is done manually and are carefully co-ordinated with auditing.
+You need to be aware of how change affects a system so that you can plan provocatively around it. Monitoring allows you to detect any changes to your environment and react. In traditional systems, change control is done manually and are carefully co-ordinated with auditing.
 
 With AWS things are a lot easier, you can use CloudWatch to monitor your environment and services such as autoscaling to automate change in response on your production environment
 
@@ -216,11 +216,11 @@ With AWS things are a lot easier, you can use CloudWatch to monitor your environ
 
 - How does your system adapt to changes in demand?
 - How are you monitoring AWS resources?
-- How are ou executing change management?
+- How are you executing change management?
 
-### Failure Mangement
+### Failure Management
 
-With cloud, you should always architect your systems with the assumptons that failure will occur. You should become aware of these failures, how they occured, how to respond to them and then plan on how to prevent these from happening again.
+With cloud, you should always architect your systems with the assumptions that failure will occur. You should become aware of these failures, how they occurred, how to respond to them and then plan on how to prevent these from happening again.
 
 **What questions should you be asking yourself?**
 
@@ -232,7 +232,7 @@ With cloud, you should always architect your systems with the assumptons that fa
 
 1. Foundations
   - IAM, VPC
-2. Change Mangement
+2. Change Management
   - AWS CloudTrail
 3. Failure Management
   - AWS CloudFormation
@@ -241,7 +241,7 @@ With cloud, you should always architect your systems with the assumptons that fa
 
 The Performance Efficiency pillar focuses on how to use computing resources efficiency to meet your requirements and how to maintain that efficiency as demand and technology evolves.
 
-### Design Priniciples
+### Design Principles
 
 - Democratize advanced technologies
 - Go global in minutes
@@ -298,13 +298,13 @@ With AWS you get a LOT of options. RDS, DynamoDB, Redshift etc.
 **What questions should you be asking yourself?**
 
 - How do you select the appropriate database solution for your system?
-- How do you ensure that you continue to have the most appropriate database solution and features as new database solution and features are luanched?
+- How do you ensure that you continue to have the most appropriate database solution and features as new database solution and features are launched?
 - How do you monitor your databases to ensure performance is as expected?
 - How do you ensure the capacity and throughput of your databases matches demand?
 
 ### Space-time trade-off
 
-Using AWS you can use services such as RDS to add read replicas, reducing the load on your database and creating mutliple copies of the database. This helps to lower latency.
+Using AWS you can use services such as RDS to add read replicas, reducing the load on your database and creating multiple copies of the database. This helps to lower latency.
 
 You can use the global infrastructure to have multiple copies of your environment, in regions that is closest to our customer base. You can also use caching services such as ElastiCache or CloudFront to reduce latency.
 
@@ -344,9 +344,9 @@ Use the Cost Optimization pillar to reduce your costs to a minimum and use those
 
 ### Matched supply and demand
 
-Try to optimally align supply with demand. Dont over provision or under provision, instead as demand grows, so should your supply of compute resources. Think of things like Autoscaling which scale with demand.
+Try to optimally align supply with demand. Don't over provision or under provision, instead as demand grows, so should your supply of compute resources. Think of things like Autoscaling which scale with demand.
 
-Similiarly in a server-less context, use services sucha as Lambda that only execute when a request comes in.
+Similarly, in a server-less context, use services such as Lambda that only execute when a request comes in.
 
 Services such as CloudWatch can also help you keep track as to what your demand is.
 
@@ -357,7 +357,7 @@ Services such as CloudWatch can also help you keep track as to what your demand 
 
 ### Cost-effective resources
 
-Using the correct instance type can be key to cost savings. For example you might hvae a reporting process that is running on a t2-Micro and it takes 7 hours to complete. That same process could be run on a an m4.2xlarge in a manner of minutes. The result remains the same but the t2.micro is more expensive because it ran for longer.
+Using the correct instance type can be key to cost savings. For example you might have a reporting process that is running on a t2-Micro and it takes 7 hours to complete. That same process could be run on a an m4.2xlarge in a manner of minutes. The result remains the same but the t2.micro is more expensive because it ran for longer.
 
 A well architected system will use the most cost efficient resources to reach the end business goal
 
@@ -388,7 +388,7 @@ AWS moves FAST! There are hundreds of new services (and potentially 1000 new ser
 
 For example, consider MySQL RDS, Aurora was launched at re:invent 2014 and is now out of preview. Aurora may be a better option now for your business because of its performance and redundancy.
 
-You should keep track of the changes made to AWS and constantly re-evaluate your existing arhcitecture. You can do this by subscribing to AWS blog nd by using services such as Trusted Advisor.
+You should keep track of the changes made to AWS and constantly re-evaluate your existing architecture. You can do this by subscribing to AWS blog nd by using services such as Trusted Advisor.
 
 **What questions should you be asking yourself?**
 
@@ -417,7 +417,7 @@ Change execution and responses should be automated. All processes and procedures
 
 - Perform operations with code
 - Align operations processes to business objectives
-- Make regular, small, inceremental changes
+- Make regular, small, incremental changes
 - Test for responses to unexpected events
 - Learn from operational events and failures
 - Keep operations procedures current
@@ -426,7 +426,7 @@ Change execution and responses should be automated. All processes and procedures
 
 **There are 3 best practice areas of Operational Excellence in the cloud...**
 
-### Preperation
+### Preparation
 
 Effective preparation is required to drive operational excellence. Operations checklists will ensure that workloads are ready for production operation, and prevent unintentional production promotion without effective preparation.
 
@@ -444,14 +444,14 @@ In AWS there are several methods, services and features that can be used to supp
 
 **AWS Config** with the AWS Config rules feature create mechanisms to automatically track and respond to changes in your AWS workloads and environments
 
-It is also important to use features like **tagging** to make sure all resources in a workload can be easily identified when needed during operations and respones.
+It is also important to use features like **tagging** to make sure all resources in a workload can be easily identified when needed during operations and responses.
 
-**What preperation questions should you ask yourself for operational excellence?**
+**What preparation questions should you ask yourself for operational excellence?**
 
 - What best practices for cloud operations are your using?
 - How are you doing configuration management for your workload?
 
-Be sure that documentation doesnt become stale or out of date! Documentation should be thorough!
+Be sure that documentation doesn't become stale or out of date! Documentation should be thorough!
 
 Without application designs, environment configs, resource configs, response plans, and mitgation plans documentation is not complete.
 
@@ -486,7 +486,7 @@ Alerts should be timely and should invoke escalations when response are not adeq
 
 QA mechanisms should be in place to automatically roll back failed deployments.
 
-Responses should follow a pre-defined playbook that includes stakeholders, the escalation process and procedures. Escalation paths should be defined and include both functional and hierarchical escalation capabilities. Heirarchical escalation should be automated and escalated priority should result in stakeholder notifications.
+Responses should follow a pre-defined playbook that includes stakeholders, the escalation process and procedures. Escalation paths should be defined and include both functional and hierarchical escalation capabilities. Hierarchical escalation should be automated and escalated priority should result in stakeholder notifications.
 
 **What questions should you be asking yourself?**
 
@@ -496,7 +496,7 @@ Responses should follow a pre-defined playbook that includes stakeholders, the e
 ### Key AWS Services
 
 1. **Preparation**
-  AWS Config provides a detailed inventory of your AWS resources and configuration, and continuously records configuration changes. AWS Service Catalog helps to create a standarized set of service offerings that are aligned to best practices. Designing workloads that use automation with services like AutoScaling, AWS SQS are good methods to ensure continuous operations in the event of unexpected operational events.
+  AWS Config provides a detailed inventory of your AWS resources and configuration, and continuously records configuration changes. AWS Service Catalog helps to create a standardized set of service offerings that are aligned to best practices. Designing workloads that use automation with services like AutoScaling, AWS SQS are good methods to ensure continuous operations in the event of unexpected operational events.
 2. **Operations**
   AWS CodeCommit, AWS CodeDeploy and AWS CodePipeline can be used to manage and automate code changes to AWS workloads. Use AWS SDKs or 3rd party libs to automate operational changes. Use AWS CloudTrail to audit and track changes made to AWS environments
 3. **Responses**
