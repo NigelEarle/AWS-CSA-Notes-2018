@@ -149,7 +149,7 @@ AWS uses the existing infrastructure of a VPC to create a VPC peering connection
 
 ### VPC Peering Limitations
 
-1. You cannot create a VPC peering connection between VPCs that have not matching or overlapping CIDR blocks ie. `10.0.0.0/16 -- X --> 10.0.0.0/24`
+1. You cannot create a VPC peering connection between VPCs that have overlapping CIDR blocks ie. `10.0.0.0/16 -- X --> 10.0.0.0/24`
 2. You cannot create a VPC peering connection between VPCs in different regions
 3. VPC peering does not support transitive peering relationships.
 
@@ -243,7 +243,7 @@ Your VPC is connected to your company HQ via a secure IPSEC VPN. Once logged in 
 
 **QUESITON: _In what order do you authenticate to get the security credentials to log into Active Directory?_**
 
-**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security credential.**
+**ANSWER: Authenticate with Active Directory first and then you are assigned the temp security credentials.**
 
 ## Workspaces
 
@@ -344,5 +344,5 @@ ECS Container Agent allows container instances to connect to your cluster. ECS C
 - Hard Limits:
     - One Load Balancer per Service
     - 1000 Tasks per Service ("desired")
-    - Max 10 Containers per Task Definition
+    - Max 10 Containers per Task Defintion
     - Max 10 Tasks per Instance (host)
