@@ -69,8 +69,8 @@ Use (cidr.xyz)[https://cidr.xyz/] to figure out subnet ranges within a VPC
 
 - Can only associate **1** subnet to a Network ACLs
 - Your VPC automatically comes with a default NACL, and by default it allows all inbound and outbound and traffic.
-- You can create custom NACLs. By default each custom NACL denies all inbound and outbound trafic until you add rules
-- Each subnet in your VPC must be associated with a network ACL. If you dont explicitly associate a subnet with a network ACL, the subnet is automatically associated with the default NACL.
+- You can create custom NACLs. By default each custom NACL denies all inbound and outbound traffic until you add rules
+- Each subnet in your VPC must be associated with a network ACL. If you don't explicitly associate a subnet with a network ACL, the subnet is automatically associated with the default NACL.
 - You can associate a NACL with multiple subnets; however, a subnet can be associated with only one network ACL at a time. When you associate a NACL with a subnet, the previous association is removed.
 - NACLs contain a numbered list of rules that is evaluated in order, starting with the lowest numbered rule
 - NACL have separate inbound and outbound rules, and each rule can either allow or deny traffic.
@@ -78,7 +78,7 @@ Use (cidr.xyz)[https://cidr.xyz/] to figure out subnet ranges within a VPC
 
 ## ALB
 
-- You need at least 2 public subnets in order to deply and application load balancer
+- You need at least 2 public subnets in order to deeply and application load balancer
 
 ## VPC Flow Logs
 

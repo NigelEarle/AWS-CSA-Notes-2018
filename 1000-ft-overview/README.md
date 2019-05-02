@@ -184,7 +184,7 @@ Application Integration:
     SQS - decouple infrastructure, queue
     SWF - workflow job creation
 
-Customer Engangement:
+Customer Engagement:
     Connect - contact center as a service, call center
     Simple Email Service - email service, send grid, mailchimp
 

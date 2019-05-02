@@ -2,7 +2,7 @@
 
 ## SQS
 
-- SQS is a distributed message queueing system
+- SQS is a distributed message queuing system
 - Allows you to decouple the components of an application so that they are independent
 - Pull-based, not push- based
 - Standard queues (default) - best effort ordering; message delivered at least once

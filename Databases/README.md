@@ -2,7 +2,7 @@
 
 ## Types of Databases
 
-### Relational Datbases
+### Relational Databases
 
 Relational databases are what most of us are all used to. They have been around since the 70's and you can think about them like spreadsheets!
 
@@ -217,7 +217,7 @@ Customers can start small for just $0.25 per hour with no commitments or upfront
 
 **Columnar Data Storage** - Instead of storing data as rows, Redshift organizes the data by column.
 
-Unlike row-based systems, which are ideal for transaction processing, column-based systems are ideal for data warehousing and analytics, where queries often invovle aggregates performed over large data sets.
+Unlike row-based systems, which are ideal for transaction processing, column-based systems are ideal for data warehousing and analytics, where queries often involve aggregates performed over large data sets.
 
 Since only the columns involved in the queries are processing and columnar data is stored sequentially on the storage media, column-based systems require far fewer I/Os, greatly improving query performance.
 
@@ -287,8 +287,8 @@ Aurora is a MySQL-compatible,relational database engine that combines the speed 
 - Start with 10G, Scles in 10G increments to 64 TB (Storage Autoscaling)
 - Compute resource can scale up to 32vCPUs and 244G of Memory.
 - 2 copies of your data is contained in each availability zone, with minimum of 3 AZ -> 6 copies of your data! Highly redundant
-- Designed to transparently handle the loss of up to 2 copies of data withou affecting database write availability and up to 3 copies without affecting read availability.
-- Aurora storage is also self-healing. Data blocks and disks are continuously scanned for errors and repaird automatically.
+- Designed to transparently handle the loss of up to 2 copies of data without affecting database write availability and up to 3 copies without affecting read availability.
+- Aurora storage is also self-healing. Data blocks and disks are continuously scanned for errors and repaired automatically.
 
 ### Aurora Replicas
 

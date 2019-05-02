@@ -6,7 +6,7 @@
 - Understand the difference between an Alias Record and a CNAME.
 - Given the choice, always choose and Alias Record over a CNAME.
 
-Remeber the different routing policies and their use cases.
+Remember the different routing policies and their use cases.
 
 - Simple
 - Weighted

@@ -2,7 +2,7 @@
 
 S3 is a safe place to store your static files being one the oldest services of AWS. It is an object based storage where your data is spread across multiple devices.
 
-S3 allows you to upload, where files can be from 0 bytes to 5TB. If an upload is successful, you will recieve an HTTP status code of `200`.
+S3 allows you to upload, where files can be from 0 bytes to 5TB. If an upload is successful, you will receive an HTTP status code of `200`.
 It is capable of unlimited storage. All files are stored into 'Buckets' which is basically an S3 term for folders.
 
 S3 uses a universal namespace meaning all names must be **_globally_** unique.
@@ -71,13 +71,13 @@ When performing overwrite PUTS and DELETES, these updated and/or deleted objects
 - Takes advantage of AWS CloudFront global, distributed edge locations.
 - When data arrives at an edge location, it is then routed to Amazon S3 over an optimized network path.
 
-## S3 Encrytion and Security
+## S3 Encryption and Security
 
 By default all newly created buckets are **PRIVATE**. You need to manually change permissions to access resources.
 
 You can set policies and permissions using either Access Control Lists or Bucket Policies. 
 
-You have the ability to make a bucket private but all certian objects in that bucket to be public.
+You have the ability to make a bucket private but all certain objects in that bucket to be public.
 
 ### Logging
 
